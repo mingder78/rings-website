@@ -12,9 +12,9 @@ export default function SidebarLayout({
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const works = [
-    ["書寫身體 風動筆畫", "#"],
+    ["書寫身體 風動筆畫", "/Writing-Body-Moving-Strokes"],
     ["Seeding Her Feet", "#"],
-    ["Rings 環", "rings"],
+    ["Rings 環", "/rings"],
     ["You House 遊居之間", "#"],
     ["Zi Yuan, A Spring Stroll 字園遊步", "#"],
     ["Zi Xian at TENT", "#"],
@@ -37,12 +37,12 @@ export default function SidebarLayout({
   ];
 
   const otherSections = [
-    "Film",
-    "Photo galleries",
-    "Visual music",
-    "News",
-    "Information",
-    "cv",
+    ["Film", "#"],
+    ["Photo galleries", "#"],
+    ["Visual music", "#"],
+    ["News", "#"],
+    ["Information", "#"],
+    ["cv", "/cv"],
   ];
 
   return (
@@ -104,10 +104,10 @@ export default function SidebarLayout({
               {otherSections.map((section, idx) => (
                 <li key={idx}>
                   <a
-                    href="#"
+                    href={section[1]}
                     className="hover:opacity-60 transition-opacity text-foreground"
                   >
-                    {section}
+                    {section[0]}
                   </a>
                 </li>
               ))}
