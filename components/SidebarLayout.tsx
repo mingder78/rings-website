@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { X, Plus } from "lucide-react";
+import { works, otherSections } from "../app/constances";
+import SocialIcons from "@/components/SocialMediaIcons";
 
 export default function SidebarLayout({
   children,
@@ -10,40 +12,6 @@ export default function SidebarLayout({
 }) {
   const [open, setOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
-
-  const works = [
-    ["書寫身體 風動筆畫", "/Writing-Body-Moving-Strokes"],
-    ["Seeding Her Feet", "#"],
-    ["Rings 環", "/rings"],
-    ["You House 遊居之間", "#"],
-    ["Zi Yuan, A Spring Stroll 字園遊步", "#"],
-    ["Zi Xian at TENT", "#"],
-    ["Foreshore 漫步潮閒", "#"],
-    ["Huai House 徊屋", "#"],
-    ["Shan yu Shu", "#"],
-    ["Ritual upon the Paper", "#"],
-    ["In-between the Post Urban", "#"],
-    ["Extension Park Vijversburg", "#"],
-    ["Zi Xian 字閒", "#"],
-    ["The Stage After", "#"],
-    ["Moving Drawings", "#"],
-    ["Narrative Theatre", "#"],
-    ["Water, Air, Ambience", "#"],
-    ["Narrative Rooms", "#"],
-    ["Hanzi on the Table", "#"],
-    ["The Shining Matter", "#"],
-    ["(un)Folded Clusters", "#"],
-    ["Meet the Mountains", "#"],
-  ];
-
-  const otherSections = [
-    ["Film", "#"],
-    ["Photo galleries", "#"],
-    ["Visual music", "#"],
-    ["News", "#"],
-    ["Information", "#"],
-    ["cv", "/cv"],
-  ];
 
   return (
     <div className="flex min-h-screen">
@@ -115,20 +83,7 @@ export default function SidebarLayout({
           </nav>
 
           {/* Social Links */}
-          <div className="flex gap-2 text-lg">
-            <a href="#" className="hover:opacity-60 transition-opacity">
-              ︎
-            </a>
-            <a href="#" className="hover:opacity-60 transition-opacity">
-              ︎
-            </a>
-            <a href="#" className="hover:opacity-60 transition-opacity">
-              ︎
-            </a>
-            <a href="#" className="hover:opacity-60 transition-opacity">
-              ︎
-            </a>
-          </div>
+          <SocialIcons />
         </div>
       </aside>
 
