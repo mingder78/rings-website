@@ -1,7 +1,6 @@
 import U404 from "@/components/UnderConstruction";
-import GalleryModal from "@/components/ImageGallery";
 const Page = () => {
-  return <GalleryModal />;
+  return <U404 />;
 };
 
 export default Page;
