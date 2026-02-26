@@ -13,7 +13,7 @@ export default function FadeCarousel({ images }) {
   }, [images.length]);
 
   return (
-    <div className="relative w-full h-full overflow-hidden rounded-box">
+    <div className="relative w-full h-screen overflow-hidden">
       {/* 容器高度需固定，例如 h-64 或 h-[400px] */}
       <div className="relative">
         <div className="absolute inset-0 min-h-[600px] w-full md:w-3/4 bg-no-repeat bg-cover mx-auto my-2 rounded-md flex items-center justify-center">
