@@ -2,18 +2,17 @@ import React from "react";
 import type { Metadata } from "next";
 import SidebarLayout from "@/components/SidebarLayout";
 import { Playfair_Display } from "next/font/google";
-import { Cormorant_Garamond } from "next/font/google";
-
-const font = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  style: ["italic"],
-  variable: "--font-cormorant", // 定義 CSS 變數以便 Tailwind 使用
-});
+import { Baskervville } from "next/font/google";
 
 import "./globals.css";
 
-const playfair = Cormorant_Garamond({
+const baskervville = Baskervville({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-baskervville", // 定義 CSS 變數以便 Tailwind 使用
+});
+
+const playfair = Playfair_Display({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-playfair", // 定義 CSS 變數以便 Tailwind 使用
@@ -36,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className={font.variable}>
+      <body className={baskervville.variable}>
         <SidebarLayout>{children}</SidebarLayout>
       </body>
     </html>

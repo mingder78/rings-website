@@ -16,11 +16,11 @@ const config: Config = {
       },
       fontFamily: {
         playfair: ["var(--font-playfair)", "serif"],
-        font: ["var(--font-font)", "serif"],
+        baskervville: ["var(--font-baskervville)", "serif"],
       },
       colors: {
-        "custom-indigo": "rgb(74, 106, 156)", // Define your color
-        "custom-indigo-semi": "rgba(74, 106, 156, 0.8)", // Or with alpha
+        "custom-indigo": "rgb(19, 65, 129)", // Define your color
+        "custom-indigo-semi": "rgba(19, 65, 129, 0.87)", // Or with alpha
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
