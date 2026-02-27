@@ -3,25 +3,15 @@
 import { useState, useRef } from "react";
 
 interface ImageData {
+  id: string;
   src: string;
   alt: string;
 }
 
 const images: ImageData[] = [
-  { src: "Screen-Shot-2020-03-20-at-11.21.10-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-11.47.40-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-11.44.27-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-11.00.48-AM.png", alt: "x" },
-  { src: "sketch_plancluster.jpg", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-11.24.32-AM.png", alt: "x" },
-  { src: "diagram_nrcollage.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-10.58.54-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-10.58.28-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-11.22.58-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-11.00.32-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-11.00.13-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-10.59.59-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-11.21.10-AM.png", alt: "x" },
+  { id: "img1", src: "https://picsum.photos", alt: "Mountain" },
+  { id: "img2", src: "https://picsum.photos", alt: "Workspace" },
+  { id: "img3", src: "https://picsum.photos", alt: "Coffee" },
 ];
 
 export default function CarouselGallery() {
@@ -38,14 +28,18 @@ export default function CarouselGallery() {
   return (
     <div className="p-10">
       {/* 1. Thumbnail Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {images.map((img, id) => (
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {images.map((img) => (
           <div
-            key={id}
-            className="cursor-zoom-in overflow-hidden"
+            key={img.id}
+            className="cursor-zoom-in overflow-hidden rounded-box"
             onClick={() => openModal(img.id)}
           >
-            <img src={img.src} alt={img.alt} className="w-full h-auto" />
+            <img
+              src={img.src}
+              alt={img.alt}
+              className="w-full h-48 object-cover"
+            />
           </div>
         ))}
       </div>
@@ -62,9 +56,9 @@ export default function CarouselGallery() {
 
           {/* daisyUI Carousel */}
           <div className="carousel w-full rounded-box shadow-2xl">
-            {images.map((img, id) => (
+            {images.map((img) => (
               <div
-                key={id}
+                key={img.id}
                 id={`slide-${img.id}`}
                 className="carousel-item relative w-full"
               >

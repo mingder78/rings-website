@@ -1,3 +1,10 @@
+/*
+ carouselImages are for the looping images on home page,
+ imagesLinks are for the image gallery with link to page for all pages,
+ works are for the sidebar menu,
+ otherSections are for the sidebar sub menu on the botton of main menu
+*/
+
 export const carouselImages = [
   "IMG_6562_bbg_crpoed.jpg",
   "000023.jpg",

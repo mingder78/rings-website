@@ -1,4 +1,3 @@
-import U404 from "@/components/UnderConstruction";
 import CarouselGallery from "@/components/CarouselGallery";
 
 interface ImageData {
@@ -24,7 +23,7 @@ const images: ImageData[] = [
 ];
 
 const Page = () => {
-  return <CarouselGallery images={images} />;
+  return <CarouselGallery />;
 };
 
 export default Page;

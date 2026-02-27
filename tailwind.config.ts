@@ -16,8 +16,11 @@ const config: Config = {
       },
       fontFamily: {
         playfair: ["var(--font-playfair)", "serif"],
+        font: ["var(--font-font)", "serif"],
       },
       colors: {
+        "custom-indigo": "rgb(74, 106, 156)", // Define your color
+        "custom-indigo-semi": "rgba(74, 106, 156, 0.8)", // Or with alpha
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
