@@ -88,7 +88,9 @@ export default function SidebarLayout({
       </aside>
 
       {/* Content */}
-      <div className="flex-1">{children}</div>
+      <div className="flex">
+        <main>{children}</main>
+      </div>
     </div>
   );
 }

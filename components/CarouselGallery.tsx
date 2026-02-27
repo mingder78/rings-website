@@ -8,13 +8,7 @@ interface ImageData {
   alt: string;
 }
 
-const images: ImageData[] = [
-  { id: "img1", src: "https://picsum.photos", alt: "Mountain" },
-  { id: "img2", src: "https://picsum.photos", alt: "Workspace" },
-  { id: "img3", src: "https://picsum.photos", alt: "Coffee" },
-];
-
-export default function CarouselGallery() {
+export default function CarouselGallery({ images }) {
   const modalRef = useRef<HTMLDialogElement>(null);
 
   const openModal = (imgId: string) => {
@@ -28,17 +22,17 @@ export default function CarouselGallery() {
   return (
     <div className="p-10">
       {/* 1. Thumbnail Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {images.map((img) => (
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
+        {images.map((img, id) => (
           <div
-            key={img.id}
+            key={id}
             className="cursor-zoom-in overflow-hidden rounded-box"
-            onClick={() => openModal(img.id)}
+            onClick={() => openModal(id)}
           >
             <img
               src={img.src}
               alt={img.alt}
-              className="w-full h-48 object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
         ))}

@@ -1,5 +1,7 @@
 import ImageLinksComponent from "@/components/ImageLinks";
 import CarouselGallery from "@/components/CarouselGallery";
+import { huaiImages } from "../constances";
+
 export default function RingsPage() {
   return (
     <div className="flex min-h-screen bg-background text-foreground">
@@ -140,7 +142,7 @@ export default function RingsPage() {
             </div>
           </div>
 
-          <CarouselGallery />
+          <CarouselGallery images={huaiImages} />
 
           {/* Footer */}
           <ImageLinksComponent />
