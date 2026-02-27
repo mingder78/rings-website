@@ -1,3 +1,4 @@
+import ImageLinksComponent from "@/components/ImageLinks";
 export default function RingsPage() {
   return (
     <div className="flex min-h-screen bg-background text-foreground">
@@ -197,7 +198,7 @@ export default function RingsPage() {
             </a>
           </p>
           {/* Footer */}
-
+          <ImageLinksComponent />
           <footer className="text-xs text-muted-foreground pt-12 border-t border-border">
             <p>©SZU-YI WANG. 2026</p>
           </footer>
