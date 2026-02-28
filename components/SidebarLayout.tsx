@@ -34,7 +34,7 @@ export default function SidebarLayout() {
 
       {/* Left Sidebar Navigation */}
       <aside
-        className={` bg-transparent min-w-[240px] fixed left-0 top-0 h-screen w-48 border-r border-border overflow-y-auto p-6 z-40 transition-transform md:static md:translate-x-0 ${
+        className={`bg-transparent min-w-[240px] fixed left-0 top-0 h-screen w-48 border-r border-border overflow-y-auto p-6 z-40 transition-transform md:static md:translate-x-0 ${
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -57,7 +57,7 @@ export default function SidebarLayout() {
                 <li key={idx}>
                   <a
                     href={work[1]}
-                    className="hover:opacity-60 transition-opacity text-muted-foreground"
+                    className="hover:opacity-60 transition-opacity text-muted-foreground md:text-red-800 md:text-foreground"
                   >
                     {work[0]}
                   </a>

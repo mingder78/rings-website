@@ -6,10 +6,10 @@
  images for
 */
 
-export interface ImageData {
+export type ImageData = {
   src: string;
   alt: string;
-}
+};
 
 export const carouselImages = [
   "IMG_6562_bbg_crpoed.jpg",

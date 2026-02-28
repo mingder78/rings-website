@@ -1,12 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-
-interface ImageData {
-  id: string;
-  src: string;
-  alt: string;
-}
+import { type ImageData } from "../app/constances";
 
 export default function CarouselGallery({ images }) {
   const modalRef = useRef<HTMLDialogElement>(null);
