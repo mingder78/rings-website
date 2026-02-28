@@ -10,7 +10,12 @@ export default function AboutPage() {
       <main className="flex-1">
         <div className="relative w-full h-full overflow-hidden">
           <FadeCarousel images={carouselImages} />
-          <ImageLinksComponent />
+          <div className="pl-1 md:pl-60">
+            <ImageLinksComponent />
+          </div>
+          <footer className="text-xs text-muted-foreground pt-12 border-t border-border">
+            <p>©SZU-YI WANG. 2026</p>
+          </footer>
         </div>
       </main>
     </div>

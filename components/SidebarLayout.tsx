@@ -5,16 +5,16 @@ import { X, Plus } from "lucide-react";
 import { works, otherSections } from "../app/constances";
 import SocialIcons from "@/components/SocialMediaIcons";
 
-export default function SidebarLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function SidebarLayout() {
   const [open, setOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className="flex min-h-screen">
+    <div
+      className="fixed left-0 top-0 h-full w-64
+
+                        text-gray-500 z-40"
+    >
       {/* Mobile Menu Button */}
       <button
         onClick={() => setSidebarOpen(!sidebarOpen)}
@@ -34,7 +34,7 @@ export default function SidebarLayout({
 
       {/* Left Sidebar Navigation */}
       <aside
-        className={`min-w-[240px] fixed left-0 top-0 h-screen w-48 border-r border-border bg-background overflow-y-auto p-6 z-40 transition-transform md:static md:translate-x-0 ${
+        className={` bg-transparent min-w-[240px] fixed left-0 top-0 h-screen w-48 border-r border-border overflow-y-auto p-6 z-40 transition-transform md:static md:translate-x-0 ${
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -57,7 +57,7 @@ export default function SidebarLayout({
                 <li key={idx}>
                   <a
                     href={work[1]}
-                    className="hover:opacity-60 transition-opacity text-foreground"
+                    className="hover:opacity-60 transition-opacity text-muted-foreground"
                   >
                     {work[0]}
                   </a>
@@ -73,7 +73,7 @@ export default function SidebarLayout({
                 <li key={idx}>
                   <a
                     href={section[1]}
-                    className="hover:opacity-60 transition-opacity text-foreground"
+                    className="hover:opacity-60 transition-opacity text-muted-foreground"
                   >
                     {section[0]}
                   </a>
@@ -88,9 +88,6 @@ export default function SidebarLayout({
       </aside>
 
       {/* Content */}
-      <div className="flex">
-        <main>{children}</main>
-      </div>
     </div>
   );
 }

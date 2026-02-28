@@ -5,7 +5,7 @@ export default function AboutPage() {
       {/* Main Content */}
       <main className="flex-1 px-4 sm:px-6 md:px-12">
         <div className="mx-auto px-4 sm:px-6 md:px-12 py-12 space-y-12">
-          <div>
+          <div className="pl-1 md:pl-60">
             <br />
             <div grid-row="" grid-pad="8" grid-gutter="16" grid-responsive="">
               <div grid-col="x12" grid-pad="8">

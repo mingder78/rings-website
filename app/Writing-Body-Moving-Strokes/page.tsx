@@ -2,7 +2,7 @@ import ImageLinksComponent from "@/components/ImageLinks";
 
 export default function RingsPage() {
   return (
-    <div className="flex min-h-screen bg-background text-foreground">
+    <div className="flex min-h-screen bg-background text-foreground pl-1 md:pl-60">
       {/* Main Content */}
       <main className="flex-1 px-4 sm:px-6 md:px-12">
         <div className="mx-auto px-4 sm:px-6 md:px-12 py-12 space-y-12">

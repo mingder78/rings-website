@@ -36,7 +36,8 @@ export default function RootLayout({
   return (
     <html>
       <body className={baskervville.variable}>
-        <SidebarLayout>{children}</SidebarLayout>
+        <SidebarLayout />
+        <main className="h-full overflow-y-auto z-0">{children}</main>
       </body>
     </html>
   );
