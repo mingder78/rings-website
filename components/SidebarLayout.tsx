@@ -38,12 +38,15 @@ export default function SidebarLayout() {
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="space-y-8">
+        <div className="space-y-8 font-ebgaramond">
           {/* Header */}
           <div>
-            <h1 className="text-sm font-medium">
+            <h1 className="text-sm">
               <span className="block">WANG, 王</span>
               <span className="block">SZU-YI 思懿</span>
+              {`|`}
+              {` `}
+              {` `}
             </h1>
           </div>
 

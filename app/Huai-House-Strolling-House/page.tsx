@@ -13,7 +13,7 @@ export default function RingsPage() {
             <div className="col-span-1 row-span-1 bg-blue-0 p-4 rounded-lg border">
               {/* Item 1 */}
               <div>
-                <h2 className="text-4xl font-light">
+                <h2 className="text-4xl font-ebgaramond">
                   Huai House 徊 屋 (Strolling House)
                 </h2>
               </div>

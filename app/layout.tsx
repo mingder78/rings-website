@@ -25,7 +25,7 @@ const ebGaramond = localFont({
       style: "italic",
     },
   ],
-  variable: "--font-eb-garamond",
+  variable: "--font-ebgaramond",
 });
 const playfair = Playfair_Display({
   subsets: ["latin"],

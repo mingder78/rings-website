@@ -45,10 +45,10 @@ export default function CarouselGallery({ images }) {
 
           {/* daisyUI Carousel */}
           <div className="carousel w-full rounded-box shadow-2xl">
-            {images.map((img) => (
+            {images.map((img, id) => (
               <div
-                key={img.id}
-                id={`slide-${img.id}`}
+                key={id}
+                id={`slide-${id}`}
                 className="carousel-item relative w-full"
               >
                 {/* Clicking image closes the modal */}
