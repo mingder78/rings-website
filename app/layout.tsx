@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import SidebarLayout from "@/components/SidebarLayout";
 import { Playfair_Display } from "next/font/google";
+import localFont from "next/font/local";
 import { Baskervville } from "next/font/google";
 
 import "./globals.css";
@@ -11,7 +12,21 @@ const baskervville = Baskervville({
   display: "swap",
   variable: "--font-baskervville", // 定義 CSS 變數以便 Tailwind 使用
 });
-
+const ebGaramond = localFont({
+  src: [
+    {
+      path: "./fonts/EBGaramond-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/EBGaramond-Italic.woff2",
+      weight: "400",
+      style: "italic",
+    },
+  ],
+  variable: "--font-eb-garamond",
+});
 const playfair = Playfair_Display({
   subsets: ["latin"],
   display: "swap",
@@ -35,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className={baskervville.variable}>
+      <body className={ebGaramond.variable}>
         <SidebarLayout />
         <main className="h-full overflow-y-auto z-0">{children}</main>
       </body>
