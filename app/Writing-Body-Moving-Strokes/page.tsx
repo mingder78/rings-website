@@ -11,7 +11,7 @@ export default function RingsPage() {
             <div className="col-span-1 row-span-1 bg-blue-0 p-4 rounded-lg border">
               {/* Item 1 */}
               <div>
-                <h2 className="text-4xl font-ebgaramond">
+                <h2 className="text-4xl font-serifmix">
                   Writing Body, Moving Strokes 書寫身體，風動筆畫
                 </h2>
               </div>

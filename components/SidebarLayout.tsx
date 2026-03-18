@@ -38,7 +38,7 @@ export default function SidebarLayout() {
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="space-y-8 font-ebgaramond">
+        <div className="space-y-8 font-serifmix">
           {/* Header */}
           <div>
             <h1 className="text-sm">

@@ -20,7 +20,7 @@ export default function FadeCarousel({ images }) {
           <div className="relative z-20 my-auto text-center pl-1 md:pl-48">
             {" "}
             {/* 加上 z-20 */}
-            <div className="font-ebgaramond text-blue-500 p-14">
+            <div className="font-serifmix text-blue-500 p-14">
               — Unfold the sensibility between light and shadow, breathe beneath
               water and air, sink into tranquility and ambience, and wander
               along with architecture and poetry.

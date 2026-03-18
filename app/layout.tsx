@@ -12,6 +12,16 @@ const baskervville = Baskervville({
   display: "swap",
   variable: "--font-baskervville", // 定義 CSS 變數以便 Tailwind 使用
 });
+const cactus = localFont({
+  src: [
+    {
+      path: "./fonts/CactusClassicalSerif-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-cactus",
+});
 const ebGaramond = localFont({
   src: [
     {
@@ -50,7 +60,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className={ebGaramond.variable}>
+      <body className={`${cactus.variable} ${ebGaramond.variable}`}>
         <SidebarLayout />
         <main className="h-full overflow-y-auto z-0">{children}</main>
       </body>
