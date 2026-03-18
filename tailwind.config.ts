@@ -17,9 +17,9 @@ const config: Config = {
       fontFamily: {
         playfair: ["var(--font-playfair)", "serif"],
         baskervville: ["var(--font-baskervville)", "serif"],
-        ebgaramond: ["var(--font-ebgaramond)"],
-        serifmix: ["var(--font-cactus)", "var(--font-ebgaramond)"],
-        cactus: ["var(--font-cactus)"],
+        ebgaramond: ["var(--font-ebgaramond)", "serif"],
+        serifmix: ["var(--font-cactus)", "var(--font-ebgaramond)", "serif"],
+        cactus: ["var(--font-cactus)", "serif"],
       },
       colors: {
         "custom-indigo": "rgb(19, 65, 129)", // Define your color

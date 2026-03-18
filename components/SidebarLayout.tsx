@@ -40,19 +40,16 @@ export default function SidebarLayout() {
       >
         <div className="space-y-8 font-serifmix">
           {/* Header */}
-          <div>
-            <h1 className="text-sm">
-              <span className="block">WANG, 王</span>
-              <span className="block">SZU-YI 思懿</span>
-              {`|`}
-              {` `}
-              {` `}
-            </h1>
-          </div>
-
+          <a href="/" rel="history" className="font-serifmix tracking-wider">
+            <span className="block">WANG, 王</span>
+            <span className="block">SZU-YI 思懿</span>
+            {`|`}
+            {` `}
+            {` `}
+          </a>
           {/* Navigation */}
           <nav className="space-y-1">
-            <div className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">
+            <div className="text-xs font-semibold tracking-widest text-muted-foreground mb-3">
               Work
             </div>
             <ul className="space-y-2 text-sm">
