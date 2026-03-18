@@ -4,21 +4,33 @@ import { huaiImages } from "../constances";
 
 export default function RingsPage() {
   return (
-    <div className="flex min-h-screen bg-background text-foreground pl-1 md:pl-60">
+    <div className="font-serifmix flex min-h-screen bg-background text-foreground pl-1 md:pl-60">
       {/* Main Content */}
       <main className="flex-1 px-4 sm:px-6 md:px-12">
-        <div className="mx-auto px-4 sm:px-6 md:px-12 py-12 space-y-12">
+        <div className="px-4 sm:px-6 md:px-12 py-12 space-y-12 bg-slate-0">
           {/* Title Section */}
-          <div className="grid grid-cols-1 grid-rows-3 gap-4 sm:grid-cols-1 sm:grid-rows-3 sm:gap-3 md:grid-cols-2 md:grid-rows-3 md:gap-4 lg:grid-cols-2 lg:grid-rows-3 lg:gap-6">
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4 rounded-lg border">
+          <div
+            className="bg-orange-0 grid
+           grid-cols-1
+           gap-4
+           sm:grid-cols-1 sm:gap-3
+           md:grid-cols-2 md:gap-4
+           lg:grid-cols-2 lg:gap-6
+           auto-rows-min"
+          >
+            <div className="bg-red-0 col-span-1 row-span-1">
               {/* Item 1 */}
               <div>
-                <h2 className="text-4xl font-serifmix">
-                  Huai House 徊 屋 (Strolling House)
-                </h2>
+                <p className="text-sm leading-relaxed space-y-2">
+                  <strong className="font-bold">
+                    Huai House 徊 屋
+                    <br />
+                    (Strolling House)
+                  </strong>
+                </p>
               </div>
             </div>
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4 rounded-lg border">
+            <div className="bg-yellow-0 col-span-1 row-span-1">
               {/* Item 2 */}
               <div>
                 <p className="text-sm leading-relaxed space-y-2">
@@ -30,12 +42,12 @@ export default function RingsPage() {
                 </p>
               </div>
             </div>
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4 rounded-lg border gap-8">
+            <div className="bg-green-0 col-span-1 row-span-1 p-4  gap-1">
               {/* Item 3 */}
               <div>
                 {/* Project Meta */}
                 <section className="space-y-4 border-y border-border py-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 sm:gap-8 text-sm">
+                  <div className="grid grid-cols-1 sm:grid-cols-1 gap-1 sm:gap-1 text-sm">
                     <div>
                       <span className="text-muted-foreground">Year</span>
                       <span className="ml-2">|</span>
@@ -74,7 +86,7 @@ export default function RingsPage() {
                 </section>
               </div>
             </div>
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4 rounded-lg border gap-4">
+            <div className="col-span-1 row-span-1 bg-blue-0 p-4  gap-4">
               {/* Item 4 */}
               <div>
                 {" "}
@@ -84,7 +96,7 @@ export default function RingsPage() {
                   <p>
                     <br />
                     <br />
-                    <strong>
+                    <strong className="font-bold">
                       While tracing and reflecting the previous experience as a
                       private residential place, Huai Wu focuses on the
                       rearrangement of interior elements, routes, and natural
@@ -96,7 +108,7 @@ export default function RingsPage() {
               </div>
             </div>
 
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4 rounded-lg border">
+            <div className="col-span-1 row-span-1 bg-blue-0 p-4 ">
               {/* Item 5 */}
               <div>
                 {" "}
@@ -121,7 +133,7 @@ export default function RingsPage() {
               </div>
             </div>
 
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4 rounded-lg border">
+            <div className="col-span-1 row-span-1 bg-blue-0 p-4 ">
               {/* Item 6 */}
               <div>
                 {" "}

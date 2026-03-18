@@ -21,7 +21,7 @@ export default function SidebarLayout() {
         className="fixed top-4 right-4 z-50 md:hidden p-2 hover:opacity-60 transition-opacity"
         aria-label="Toggle menu"
       >
-        {sidebarOpen ? <X size={24} /> : <Plus size={24} />}
+        {sidebarOpen ? <X size={24} /> : <Plus size={32} />}
       </button>
 
       {/* Mobile Overlay */}

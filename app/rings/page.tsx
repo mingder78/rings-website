@@ -7,7 +7,7 @@ export default function RingsPage() {
         <div className="mx-auto px-4 sm:px-6 md:px-12 py-12 space-y-12">
           {/* Title Section */}
           <div className="grid grid-cols-1 grid-rows-3 gap-4 sm:grid-cols-1 sm:grid-rows-3 sm:gap-3 md:grid-cols-2 md:grid-rows-3 md:gap-4 lg:grid-cols-2 lg:grid-rows-3 lg:gap-6">
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4 rounded-lg border">
+            <div className="col-span-1 row-span-1 bg-blue-0 p-4 ">
               {/* Item 1 */}
               <div>
                 <h2 className="text-4xl font-serifmix">
@@ -16,7 +16,7 @@ export default function RingsPage() {
                 </h2>
               </div>
             </div>
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4 rounded-lg border">
+            <div className="col-span-1 row-span-1 bg-blue-0 p-4 ">
               {/* Item 2 */}
               <div>
                 <p className="text-sm leading-relaxed space-y-2">
@@ -29,7 +29,7 @@ export default function RingsPage() {
                 </p>
               </div>
             </div>
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4 rounded-lg border gap-8">
+            <div className="col-span-1 row-span-1 bg-blue-0 p-4  gap-8">
               {/* Item 3 */}
               <div>
                 {/* Project Meta */}
@@ -66,7 +66,7 @@ export default function RingsPage() {
                 </section>
               </div>
             </div>
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4 rounded-lg border gap-4">
+            <div className="col-span-1 row-span-1 bg-blue-0 p-4  gap-4">
               {/* Item 4 */}
               <div>
                 {" "}
@@ -97,7 +97,7 @@ export default function RingsPage() {
               </div>
             </div>
 
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4 rounded-lg border content-end">
+            <div className="col-span-1 row-span-1 bg-blue-0 p-4  content-end">
               {/* Item 5 */}
               <div>
                 {" "}
@@ -111,7 +111,7 @@ export default function RingsPage() {
               </div>
             </div>
 
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4 rounded-lg border">
+            <div className="col-span-1 row-span-1 bg-blue-0 p-4 ">
               {/* Item 6 */}
               <div>
                 {" "}
