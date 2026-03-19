@@ -25,8 +25,8 @@ export default function RingsPage() {
                   <strong className="font-bold">
                     Huai House 徊 屋
                     <br />
-                    (Strolling House)
                   </strong>
+                  (Strolling House)
                 </p>
               </div>
             </div>
@@ -42,51 +42,49 @@ export default function RingsPage() {
                 </p>
               </div>
             </div>
-            <div className="bg-green-0 col-span-1 row-span-1 p-4  gap-1">
-              {/* Item 3 */}
-              <div>
-                {/* Project Meta */}
-                <section className="space-y-4 border-y border-border py-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-1 gap-1 sm:gap-1 text-sm">
-                    <div>
-                      <span className="text-muted-foreground">Year</span>
-                      <span className="ml-2">|</span>
-                      <span className="ml-2">2019-2020</span>
-                    </div>
-                    <div>
-                      <span className="text-muted-foreground">Type</span>
-                      <span className="ml-2">|</span>
-                      <span className="ml-2">
-                        renovation project, concept design for
-                        workspace+gallery{" "}
-                      </span>
-                    </div>
-                    <div>
-                      <span className="text-muted-foreground">Location</span>
-                      <span className="ml-2">|</span>
-                      <span className="ml-2">Tainan, Taiwan (conceptual)</span>
-                    </div>
-                    <div>
-                      <span className="text-muted-foreground">Material</span>
-                      <span className="ml-2">|</span>
-                      <span className="ml-2">
-                        coding of light, digital collages, rendering
-                      </span>
-                    </div>
+            {/* Item 3 */}
+            <div>
+              {/* Project Meta */}
+              <section className="space-y-4 border-border py-6">
+                <div className="grid grid-cols-1 sm:grid-cols-1 gap-1 sm:gap-1 text-sm">
+                  <div>
+                    <span className="text-muted-foreground">Year</span>
+                    <span className="ml-2">|</span>
+                    <span className="ml-2">2019-2020</span>
                   </div>
-                </section>
-                {/* Exhibition Info */}
-                <section className="space-y-4 text-sm leading-relaxed">
-                  <p>
-                    <strong>
-                      <br />
-                      <br />
-                    </strong>
-                  </p>
-                </section>
-              </div>
+                  <div>
+                    <span className="text-muted-foreground">Type</span>
+                    <span className="ml-2">|</span>
+                    <span className="ml-2">
+                      renovation project, concept design for
+                      workspace+gallery{" "}
+                    </span>
+                  </div>
+                  <div>
+                    <span className="text-muted-foreground">Location</span>
+                    <span className="ml-2">|</span>
+                    <span className="ml-2">Tainan, Taiwan (conceptual)</span>
+                  </div>
+                  <div>
+                    <span className="text-muted-foreground">Material</span>
+                    <span className="ml-2">|</span>
+                    <span className="ml-2">
+                      coding of light, digital collages, rendering
+                    </span>
+                  </div>
+                </div>
+              </section>
+              {/* Exhibition Info */}
+              <section className="space-y-4 text-sm leading-relaxed">
+                <p>
+                  <strong>
+                    <br />
+                    <br />
+                  </strong>
+                </p>
+              </section>
             </div>
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4  gap-4">
+            <div className="col-span-1 row-span-1 bg-blue-0 gap-4">
               {/* Item 4 */}
               <div>
                 {" "}
@@ -108,7 +106,7 @@ export default function RingsPage() {
               </div>
             </div>
 
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4 ">
+            <div className="col-span-1 row-span-1 bg-blue-0">
               {/* Item 5 */}
               <div>
                 {" "}

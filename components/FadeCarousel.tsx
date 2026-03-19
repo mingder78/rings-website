@@ -20,7 +20,7 @@ export default function FadeCarousel({ images }) {
           <div className="relative z-20 my-auto text-center pl-1 md:pl-48">
             {" "}
             {/* 加上 z-20 */}
-            <div className="font-serifmix text-blue-500 p-14">
+            <div className="h-64 font-serifmix text-[rgb(19,65,129)] p-6 text-[16.084px]">
               — Unfold the sensibility between light and shadow, breathe beneath
               water and air, sink into tranquility and ambience, and wander
               along with architecture and poetry.
@@ -32,7 +32,7 @@ export default function FadeCarousel({ images }) {
         <div
           key={i}
           className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            i === current ? "opacity-100 z-10" : "opacity-0 z-0"
+            i === current ? "opacity-75 z-10" : "opacity-0 z-0"
           }`}
           style={{ backgroundImage: `url(${img})` }}
         >
