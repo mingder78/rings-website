@@ -22,9 +22,9 @@ export default function SidebarLayout() {
         aria-label="Toggle menu"
       >
         {sidebarOpen ? (
-          <X size={42} strokeWidth={1} />
+          <X size={42} strokeWidth={1.5} />
         ) : (
-          <Plus size={42} strokeWidth={1} />
+          <Plus size={42} strokeWidth={1.5} />
         )}
       </button>
 
