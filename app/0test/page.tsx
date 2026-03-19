@@ -14,7 +14,7 @@ const Page = () => {
             rel="history"
             className="hover:opacity-60 font-serifmix tracking-wider"
           >
-            WANG, 王 SZU-YI 思 懿x
+            WANG, 王 SZU-YI 思 懿
           </a>
         </p>
       </main>
