@@ -17,10 +17,10 @@ export default function FadeCarousel({ images }) {
       {/* 容器高度需固定，例如 h-64 或 h-[400px] */}
       <div className="relative">
         <div className="absolute inset-0 min-h-[600px] w-full md:w-3/4 bg-no-repeat bg-cover mx-auto my-2 rounded-md flex items-center justify-center">
-          <div className="relative z-20 my-auto text-center pl-1 md:pl-48">
+          <div className="relative z-20 my-auto">
             {" "}
             {/* 加上 z-20 */}
-            <div className="h-64 font-serifmix text-[rgb(19,65,129)] p-6 text-[16.084px]">
+            <div className="h-64 font-serifmix text-[rgb(19,65,129)] p-11 text-[16.384px]">
               — Unfold the sensibility between light and shadow, breathe beneath
               water and air, sink into tranquility and ambience, and wander
               along with architecture and poetry.
