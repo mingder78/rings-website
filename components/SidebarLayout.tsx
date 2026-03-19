@@ -18,10 +18,14 @@ export default function SidebarLayout() {
       {/* Mobile Menu Button */}
       <button
         onClick={() => setSidebarOpen(!sidebarOpen)}
-        className="fixed top-4 right-4 z-50 md:hidden p-2 hover:opacity-60 transition-opacity"
+        className="fixed top-3 right-3 z-50 md:hidden text-gray-800 hover:text-gray-900 transition-colors"
         aria-label="Toggle menu"
       >
-        {sidebarOpen ? <X size={24} /> : <Plus size={32} />}
+        {sidebarOpen ? (
+          <X size={42} strokeWidth={1} />
+        ) : (
+          <Plus size={42} strokeWidth={1} />
+        )}
       </button>
 
       {/* Mobile Overlay */}
@@ -34,17 +38,13 @@ export default function SidebarLayout() {
 
       {/* Left Sidebar Navigation */}
       <aside
-        className={`bg-transparent min-w-[240px] fixed left-0 top-0 h-screen text-[rgb(150,150,150)] w-48 overflow-y-auto p-8 z-40 transition-transform md:static md:translate-x-0 ${
+        className={`bg-transparent min-w-[240px] fixed left-0 top-0 h-screen text-[rgb(150,150,150)] w-8 overflow-y-auto p-8 z-40 transition-transform md:static md:translate-x-0 ${
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <div className="space-y-8 font-serifmix">
           {/* Header */}
-          <a
-            href="/"
-            rel="history"
-            className="font-serifmix tracking-wider text-gray-700"
-          >
+          <a href="/" rel="history" className="font-serifmix text-gray-700">
             <span className="block">WANG, 王</span>
             <span className="block">SZU-YI 思 懿</span>
             {`|`}
