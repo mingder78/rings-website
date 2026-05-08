@@ -5,7 +5,7 @@ import { Playfair_Display } from "next/font/google";
 import localFont from "next/font/local";
 import { Baskervville } from "next/font/google";
 
-import "./globals.css";
+import "../styles/globals.css";
 
 const baskervville = Baskervville({
   subsets: ["latin"],
