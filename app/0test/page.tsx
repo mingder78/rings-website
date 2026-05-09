@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Page = () => {
   return (
-    <div className="flex min-h-screen bg-background text-foreground pl-1 md:pl-60">
+    <div className="flex min-h-screen bg-background text-foreground md:pl-60">
       {/* Main Content */}
       <main className="flex-1 px-4 sm:px-6 md:px-12">
         <p className="text-[clamp(12px,2vw,24px)]">

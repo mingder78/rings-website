@@ -4,10 +4,10 @@ import { seedingImages } from "../constances";
 
 export default function RingsPage() {
   return (
-    <div className="font-mixed flex min-h-screen bg-background text-foreground pl-1 md:pl-60">
+    <div className="font-mixed flex min-h-screen bg-background text-foreground md:pl-60">
       {/* Main Content */}
       <main className="flex-1 px-4 sm:px-6 md:px-12">
-        <div className="px-4 sm:px-6 md:px-12 py-12 space-y-12 bg-slate-0">
+        <div className="px-4 sm:px-6 md:px-6 py-6 space-y-12 bg-slate-0">
           {/* Title Section */}
           <div
             className="bg-orange-0 grid
@@ -21,7 +21,7 @@ export default function RingsPage() {
             <div className="bg-red-0 col-span-1 row-span-1">
               {/* Item 1 */}
               <div>
-                <p className="text-lg leading-relaxed space-y-2">
+                <p className="text-sm leading-relaxed space-y-2">
                   Seeding Her Feet
                 </p>
               </div>
@@ -29,7 +29,7 @@ export default function RingsPage() {
             <div className="bg-yellow-0 col-span-1 row-span-1">
               {/* Item 2 */}
               <div>
-                <p className="text-lg leading-relaxed space-y-2">
+                <p className="text-sm leading-relaxed space-y-2">
                   <em>
                     A spatial plan for artworks ‘Seeding my feets in the chant
                     of bells’ by Mehraneh Atashi.
@@ -93,7 +93,7 @@ export default function RingsPage() {
                 </div>
               </section>
               {/* Exhibition Info */}
-              <section className="space-y-4 text-lg leading-relaxed">
+              <section className="space-y-4 text-sm leading-relaxed">
                 <p>
                   <strong>
                     <br />
@@ -108,7 +108,7 @@ export default function RingsPage() {
                 {" "}
                 {/* Quote */}
                 {/* Main Description */}
-                <section className="space-y-4 text-lg leading-relaxed">
+                <section className="space-y-4 text-sm leading-relaxed">
                   <p>
                     <br />
 
@@ -137,7 +137,7 @@ export default function RingsPage() {
                     Rotterdam.
                   </p>
                 </section>
-                <section className="text-lg text-muted-foreground space-y-1">
+                <section className="text-sm text-muted-foreground space-y-1">
                   <p></p>
                 </section>
               </div>
@@ -149,7 +149,7 @@ export default function RingsPage() {
                 <section className=" text-muted-foreground space-y-1">
                   <p></p>
                 </section>
-                <section className="text-lg text-muted-foreground space-y-1">
+                <section className="text-sm text-muted-foreground space-y-1">
                   <p></p>
                 </section>
               </div>

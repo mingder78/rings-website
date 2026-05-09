@@ -2,10 +2,10 @@ import ImageLinksComponent from "@/components/ImageLinks";
 
 export default function RingsPage() {
   return (
-    <div className="font-mixed flex min-h-screen bg-background text-foreground pl-1 md:pl-60">
+    <div className="font-mixed flex min-h-screen bg-background text-foreground md:pl-60">
       {/* Main Content */}
       <main className="flex-1 sm:px-12 md:px-4">
-        <div className="py-12 px-12 space-y-12 bg-slate-0">
+        <div className="py-6 px-6 space-y-12 bg-slate-0">
           {/* Title Section */}
           <div
             className="bg-orange-0 grid
@@ -19,8 +19,10 @@ export default function RingsPage() {
             <div className="bg-red-0 col-span-1 row-span-1">
               {/* Item 1 */}
               <div>
-                <p className="text-lg leading-relaxed space-y-2">
+                <p className="text-sm leading-relaxed space-y-2">
                   Writing Body, Moving Strokes 書寫身體，風動筆畫
+                  <br />
+                  <br />
                 </p>
               </div>
             </div>
@@ -31,45 +33,49 @@ export default function RingsPage() {
                   <em>
                     Beginning with Chi: An Exploration of Hanzi’s Spatiality and
                     Embodiment
+                    <br />
+                    <br />
+                    <br />
                   </em>
                 </p>
               </div>
             </div>
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4  gap-8">
+            <div className="col-span-1 row-span-1 bg-blue-0 gap-8">
               {/* Item 3 */}
               <div>
                 {/* Project Meta */}
-                <section className="space-y-4 border-y border-border py-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-1 gap-1 sm:gap-1 text-sm">
-                    <div>
-                      <span className="text-muted-foreground">Year</span>
-                      <span className="ml-2">|</span>
-                      <span className="ml-2">2023 - ongoing</span>
-                    </div>
-                    <div>
-                      <span className="text-muted-foreground">Type</span>
-                      <span className="ml-2">|</span>
-                      <span className="ml-2">
-                        research, body language, performance{" "}
-                      </span>
-                    </div>
+                <div className="grid grid-cols-1 gap-1 text-sm">
+                  <div>
+                    <span className="text-muted-foreground">Year</span>
+                    <span className="ml-2">|</span>
+                    <span className="ml-2">2023 - ongoing</span>
+                    <br />
+                    <span className="text-muted-foreground">Type</span>
+                    <span className="ml-2">|</span>
+                    <span className="ml-2">
+                      research, body language, performance{" "}
+                    </span>
                   </div>
-                </section>
+                </div>
+
                 {/* Exhibition Info */}
-                <section className="space-y-4 text-sm leading-relaxed">
+                <section className="text-muted-foreground space-y-4 text-sm leading-relaxed">
                   <p>
                     <br />
                     <br />
-                    本期就計畫由 台灣 國藝會 贊助 荷蘭 iii Den Haag, PANT
-                    台荷藝集 協力
+                    本期就計畫由 台灣 國藝會 贊助
+                    <br />
+                    荷蘭 iii Den Haag, PANT 台荷藝集 協力
                     <br />
                     <br />
-                    在研究成果之交流展演中，王思懿與音樂家、舞者及口說表演者等不同領域之（表演）藝術家進行即興互動與交流，透過人與人（身體）、人與非人（語言／氣候自然）的共演實驗，交換對漢字之身體性、空間性與環境感知的理解。
+                    <p className="text-foreground">
+                      在研究成果之交流展演中，王思懿與音樂家、舞者及口說表演者等不同領域之（表演）藝術家進行即興互動與交流，透過人與人（身體）、人與非人（語言／氣候自然）的共演實驗，交換對漢字之身體性、空間性與環境感知的理解。
+                    </p>
                   </p>
                 </section>
               </div>
             </div>
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4  gap-4">
+            <div className="col-span-1 row-span-1 bg-blue-0 gap-4">
               {/* Item 4 */}
               <div>
                 {" "}
@@ -78,7 +84,7 @@ export default function RingsPage() {
                   <p>由氣出發——探索漢字的空間性與身體性</p>
                 </section>
                 {/* Main Description */}
-                <section className="space-y-4 text-sm leading-relaxed">
+                <section className="text-muted-foreground space-y-4 text-sm leading-relaxed">
                   <p>
                     <br />
                     <br />
@@ -101,16 +107,19 @@ export default function RingsPage() {
                     <br />
                     以及其他來自各種領域之創作者。
                   </p>
+                  <br />
+                  <br />
+                  <br />
                 </section>
               </div>
             </div>
 
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4 ">
+            <div className="col-span-1 row-span-1 bg-blue-0  ">
               {/* Item 5 */}
               <div>
                 {" "}
                 {/* Credits */}
-                <section className="text-sm text-muted-foreground space-y-1">
+                <section className="text-sm text-muted-foreground space-y-1 italic">
                   <p>
                     《書寫身體，風動筆畫》為主持藝術家王思懿長期創作研究「字築
                     Zi Zhu: Hanzi Building
@@ -120,13 +129,13 @@ export default function RingsPage() {
               </div>
             </div>
 
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4 ">
+            <div className="col-span-1 row-span-1 bg-blue-0  ">
               {/* Item 6 */}
               <div>
                 {" "}
                 {/* Video/Response Section */}
-                <section className="space-y-8 border-t border-border pt-8">
-                  <p className="text-normal leading-relaxed">
+                <section className="space-y-8">
+                  <p className="text-sm leading-relaxed text-muted-foreground italic">
                     計畫由「風、雲、雨、氣」等氣候漢字之研究出發，回溯其造字邏輯與天象觀察，並嘗試將文字所指涉的「氣」轉化為身體運動中的「氣」，發展一套以身體演繹文字、以空間承載感知的創作方法。作為多元藝術先導計畫，本計畫透過「空間詩學」、「空間譜記」與「身體的空間書寫」三個研究面向，進行文本研究、漢字結構之視覺分析、錄像探討與即興交流，測試漢字空間性轉化為身體語言與展演形式的可能性。
                   </p>
                 </section>
