@@ -137,3 +137,17 @@ export const huaiImages: ImageData[] = [
   { src: "Screen-Shot-2020-03-20-at-10.59.59-AM.png", alt: "x" },
   { src: "Screen-Shot-2020-03-20-at-11.21.10-AM.png", alt: "x" },
 ];
+
+export const seedingImages: ImageData[] = [
+  { src: "PXL_20210910_173418394.jpg", alt: "x" },
+  { src: "Screenshot_20211106-021331_2.png", alt: "x" },
+  { src: "PXL_20210910_173659861.jpg", alt: "x" },
+  { src: "PXL_20210910_175328593.jpg", alt: "x" },
+  { src: "PXL_20210910_173432366.jpg", alt: "x" },
+  { src: "A6DF5CE0-5399-494D-BA0A-C3E31A87E3E6.jpg", alt: "x" },
+  { src: "246439937_10157865498606486_8503072133344096881_n.jpg", alt: "x" },
+  { src: "FAB0F8F9-BBE3-4634-B418-0D067A893328.jpg", alt: "x" },
+  { src: "Tent-divers-expo-10sept21.jpeg", alt: "x" },
+  { src: "242382449_1791722104549286_600044980755895869_n.jpg", alt: "x" },
+  { src: "246898587_10157865498871486_8487943744716560508_n.jpg", alt: "x" },
+];

@@ -22,10 +22,8 @@ export default function RingsPage() {
               {/* Item 1 */}
               <div>
                 <p className="text-lg leading-relaxed space-y-2">
-                  <strong className="font-medium">
-                    Huai House 徊 屋
-                    <br />
-                  </strong>
+                  Huai House 徊 屋
+                  <br />
                   (Strolling House)
                 </p>
               </div>
