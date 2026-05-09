@@ -11,90 +11,98 @@ export default function SidebarLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div
-      className="fixed left-0 top-0 h-full w-64
-                        text-gray-500 z-40"
-    >
-      {/* Mobile Menu Button */}
-      <button
-        onClick={() => setSidebarOpen(!sidebarOpen)}
-        className="fixed top-3 right-3 z-50 md:hidden text-gray-800 hover:text-gray-900 transition-colors"
-        aria-label="Toggle menu"
-      >
-        {sidebarOpen ? (
-          <X size={42} strokeWidth={1.5} />
-        ) : (
-          <Plus size={42} strokeWidth={1.5} />
+    <>
+      <style>
+        {`
+            .no-scrollbar::-webkit-scrollbar {
+              display: none;
+            }
+            .no-scrollbar {
+              -ms-overflow-style: none;
+              scrollbar-width: none;
+            }
+          `}
+      </style>
+
+      <div className="fixed left-0 top-0 h-full w-64 text-gray-500 z-40">
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setSidebarOpen(!sidebarOpen)}
+          className="fixed top-3 right-3 z-50 md:hidden text-gray-800 hover:text-gray-900 transition-colors"
+          aria-label="Toggle menu"
+        >
+          {sidebarOpen ? (
+            <X size={42} strokeWidth={1.5} />
+          ) : (
+            <Plus size={42} strokeWidth={1.5} />
+          )}
+        </button>
+
+        {/* Mobile Overlay */}
+        {sidebarOpen && (
+          <div
+            className="fixed inset-0 bg-black/20 z-30 md:hidden"
+            onClick={() => setSidebarOpen(false)}
+          />
         )}
-      </button>
 
-      {/* Mobile Overlay */}
-      {sidebarOpen && (
-        <div
-          className="fixed inset-0 bg-black/20 z-30 md:hidden"
-          onClick={() => setSidebarOpen(false)}
-        />
-      )}
+        {/* Left Sidebar Navigation */}
+        <aside
+          className={`overflow-y-scroll no-scrollbar bg-transparent min-w-[240px] fixed left-0 top-0 h-screen text-[rgb(150,150,150)] w-8 p-8 z-40 transition-transform md:static md:translate-x-0 ${
+            sidebarOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
+        >
+          <div className="space-y-8 font-serifmix">
+            {/* Header */}
+            <a href="/" rel="history" className="font-serifmix text-gray-700">
+              <span className="block">WANG, 王</span>
+              <span className="block">SZU-YI 思 懿</span>
+              {`|`}
+              <br />
+              <br />
+            </a>
+            {/* Navigation */}
+            <nav className="space-y-1">
+              <div className="text-sm font-semibold text-muted-foreground mb-3 text-gray-700">
+                Work
+              </div>
+              <ul className="space-y-2 text-sm">
+                {works.map((work, idx) => (
+                  <li key={idx}>
+                    <a
+                      href={work[1]}
+                      className="hover:opacity-60 transition-opacity text-muted-foreground md:text-gray-500 md:text-foreground"
+                    >
+                      {work[0]}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
 
-      {/* Left Sidebar Navigation */}
-      <aside
-        className={`text-[clamp(8px,3vw,12px)] bg-transparent
-        min-w-[240px] w-[240px] sm:w-[260px] md:w-[280px] lg:w-[320px]
-        fixed left-0 top-0 h-screen text-[rgb(150,150,150)]
-        overflow-y-auto p-8 z-40 transition-transform
-        md:static md:translate-x-0
-        ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}`}
-      >
-        <div className="space-y-8 font-mixed">
-          {/* Header */}
-          <a href="/" rel="history" className=" text-gray-700">
-            <span className="block">WANG, 王</span>
-            <span className="block">SZU-YI 思 懿</span>
-            {`|`}
-            <br />
-            <br />
-          </a>
-          {/* Navigation */}
-          <nav className="space-y-1">
-            <div className="font-semibold text-muted-foreground mb-3 text-gray-700">
-              Work
-            </div>
-            <ul className="space-y-2">
-              {works.map((work, idx) => (
-                <li key={idx}>
-                  <a
-                    href={work[1]}
-                    className="hover:opacity-60 transition-opacity text-muted-foreground md:text-gray-500 md:text-foreground"
-                  >
-                    {work[0]}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
+            {/* Other Sections */}
+            <nav className="space-y-1">
+              <ul className="space-y-2 text-sm">
+                {otherSections.map((section, idx) => (
+                  <li key={idx}>
+                    <a
+                      href={section[1]}
+                      className="hover:opacity-60 transition-opacity text-muted-foreground"
+                    >
+                      {section[0]}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
 
-          {/* Other Sections */}
-          <nav className="space-y-1">
-            <ul className="space-y-2 text-sm">
-              {otherSections.map((section, idx) => (
-                <li key={idx}>
-                  <a
-                    href={section[1]}
-                    className="hover:opacity-60 transition-opacity text-muted-foreground"
-                  >
-                    {section[0]}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
+            {/* Social Links */}
+            <SocialIcons />
+          </div>
+        </aside>
 
-          {/* Social Links */}
-          <SocialIcons />
-        </div>
-      </aside>
-
-      {/* Content */}
-    </div>
+        {/* Content */}
+      </div>
+    </>
   );
 }

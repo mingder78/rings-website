@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import "../styles/globals.css";
 
-export default function FadeCarousel({ images }) {
+export default function FadeCarousel({ images }: { images: string[] }) {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function FadeCarousel({ images }) {
         and air, sink into tranquility and ambience, and wander along with
         architecture and poetry.
       </div>
-      {images.map((img, i) => (
+      {images.map((img: string, i: number) => (
         <div
           key={i}
           className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
