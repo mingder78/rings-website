@@ -4,6 +4,7 @@ import { useState } from "react";
 import { X, Plus } from "lucide-react";
 import { works, otherSections } from "../app/constances";
 import SocialIcons from "@/components/SocialMediaIcons";
+import "../styles/globals.css";
 
 export default function SidebarLayout() {
   const [open, setOpen] = useState(false);
@@ -12,7 +13,6 @@ export default function SidebarLayout() {
   return (
     <div
       className="fixed left-0 top-0 h-full w-64
-
                         text-gray-500 z-40"
     >
       {/* Mobile Menu Button */}
@@ -38,13 +38,16 @@ export default function SidebarLayout() {
 
       {/* Left Sidebar Navigation */}
       <aside
-        className={`bg-transparent min-w-[240px] fixed left-0 top-0 h-screen text-[rgb(150,150,150)] w-8 overflow-y-auto p-8 z-40 transition-transform md:static md:translate-x-0 ${
-          sidebarOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
+        className={`text-[clamp(8px,3vw,12px)] bg-transparent
+        min-w-[240px] w-[240px] sm:w-[260px] md:w-[280px] lg:w-[320px]
+        fixed left-0 top-0 h-screen text-[rgb(150,150,150)]
+        overflow-y-auto p-8 z-40 transition-transform
+        md:static md:translate-x-0
+        ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
-        <div className="space-y-8 font-serifmix">
+        <div className="space-y-8 font-mixed">
           {/* Header */}
-          <a href="/" rel="history" className="font-serifmix text-gray-700">
+          <a href="/" rel="history" className=" text-gray-700">
             <span className="block">WANG, 王</span>
             <span className="block">SZU-YI 思 懿</span>
             {`|`}
@@ -53,10 +56,10 @@ export default function SidebarLayout() {
           </a>
           {/* Navigation */}
           <nav className="space-y-1">
-            <div className="text-sm font-semibold text-muted-foreground mb-3 text-gray-700">
+            <div className="font-semibold text-muted-foreground mb-3 text-gray-700">
               Work
             </div>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2">
               {works.map((work, idx) => (
                 <li key={idx}>
                   <a

@@ -20,6 +20,8 @@ const config: Config = {
         ebgaramond: ["var(--font-ebgaramond)", "serif"],
         serifmix: ["var(--font-cactus)", "var(--font-ebgaramond)", "serif"],
         cactus: ["var(--font-cactus)", "serif"],
+        noto: ["var(--font-noto-tc)"],
+        mixed: ["var(--font-ebgaramond)", "var(--font-noto-tc)", "sans-serif"],
       },
       colors: {
         "custom-indigo": "rgb(19, 65, 129)", // Define your color

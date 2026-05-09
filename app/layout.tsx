@@ -4,6 +4,7 @@ import SidebarLayout from "@/components/SidebarLayout";
 import { Playfair_Display } from "next/font/google";
 import localFont from "next/font/local";
 import { Baskervville } from "next/font/google";
+import { Noto_Sans_TC } from "next/font/google";
 
 import "../styles/globals.css";
 
@@ -12,6 +13,13 @@ const baskervville = Baskervville({
   display: "swap",
   variable: "--font-baskervville", // 定義 CSS 變數以便 Tailwind 使用
 });
+
+const notoSansTC = Noto_Sans_TC({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+  variable: "--font-noto-tc",
+});
+
 const cactus = localFont({
   src: [
     {
@@ -59,8 +67,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html>
-      <body className={`${cactus.variable} ${ebGaramond.variable}`}>
+    <html lang="zh-Hant">
+      <body
+        className={`${cactus.variable} ${ebGaramond.variable} ${notoSansTC.variable}`}
+      >
         <SidebarLayout />
         <main className="h-full overflow-y-auto z-0">{children}</main>
       </body>

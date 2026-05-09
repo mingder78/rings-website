@@ -4,7 +4,7 @@ import { huaiImages } from "../constances";
 
 export default function RingsPage() {
   return (
-    <div className="font-serifmix flex min-h-screen bg-background text-foreground pl-1 md:pl-60">
+    <div className="font-mixed flex min-h-screen bg-background text-foreground pl-1 md:pl-60">
       {/* Main Content */}
       <main className="flex-1 px-4 sm:px-6 md:px-12">
         <div className="px-4 sm:px-6 md:px-12 py-12 space-y-12 bg-slate-0">
@@ -21,8 +21,8 @@ export default function RingsPage() {
             <div className="bg-red-0 col-span-1 row-span-1">
               {/* Item 1 */}
               <div>
-                <p className="text-sm leading-relaxed space-y-2">
-                  <strong className="font-bold">
+                <p className="text-lg leading-relaxed space-y-2">
+                  <strong className="font-medium">
                     Huai House 徊 屋
                     <br />
                   </strong>
@@ -33,7 +33,7 @@ export default function RingsPage() {
             <div className="bg-yellow-0 col-span-1 row-span-1">
               {/* Item 2 */}
               <div>
-                <p className="text-sm leading-relaxed space-y-2">
+                <p className="text-lg leading-relaxed space-y-2">
                   <em>
                     An interior renovation for wandering in a Taiwanese street
                     house—a gallery + shared workspace derived from its previous
@@ -75,7 +75,7 @@ export default function RingsPage() {
                 </div>
               </section>
               {/* Exhibition Info */}
-              <section className="space-y-4 text-sm leading-relaxed">
+              <section className="space-y-4 text-lg leading-relaxed">
                 <p>
                   <strong>
                     <br />
@@ -90,11 +90,11 @@ export default function RingsPage() {
                 {" "}
                 {/* Quote */}
                 {/* Main Description */}
-                <section className="space-y-4 text-sm leading-relaxed">
+                <section className="space-y-4 text-lg leading-relaxed">
                   <p>
                     <br />
                     <br />
-                    <strong className="font-bold">
+                    <strong className="font-normal">
                       While tracing and reflecting the previous experience as a
                       private residential place, Huai Wu focuses on the
                       rearrangement of interior elements, routes, and natural
@@ -111,7 +111,7 @@ export default function RingsPage() {
               <div>
                 {" "}
                 {/* Credits */}
-                <section className="text-sm text-muted-foreground space-y-1">
+                <section className="text-lg text-muted-foreground space-y-1">
                   <p>
                     This project “Huai House (徊屋 Huai Wu)” is a further
                     development after the artistic research “Narrative Rooms”
@@ -119,7 +119,7 @@ export default function RingsPage() {
                     realms speculated to serve as workspaces.
                   </p>
                 </section>
-                <section className="text-sm text-muted-foreground space-y-1">
+                <section className="text-lg text-muted-foreground space-y-1">
                   <p>
                     <br />* In “Narrative Rooms” (2017), tracing the spatial
                     monologue narrating some specific details of the interior,
@@ -136,8 +136,8 @@ export default function RingsPage() {
               <div>
                 {" "}
                 {/* Video/Response Section */}
-                <section className="space-y-8 border-t border-border pt-8">
-                  <p className="text-sm leading-relaxed italic">
+                <section className="space-y-8 border-t border-border">
+                  <p className="text-lg leading-relaxed italic">
                     <strong>
                       Then, in “Huai House”, based on the context of the
                       Taiwanese street house—as many renovation projects of it

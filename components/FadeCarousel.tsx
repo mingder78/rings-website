@@ -14,19 +14,11 @@ export default function FadeCarousel({ images }) {
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      {/* 容器高度需固定，例如 h-64 或 h-[400px] */}
-      <div className="relative">
-        <div className="absolute inset-0 min-h-[600px] w-full md:w-3/4 bg-no-repeat bg-cover mx-auto my-2 rounded-md flex items-center justify-center">
-          <div className="z-20 my-auto mx-auto md:translate-x-[100px]">
-            {" "}
-            {/* 加上 z-20 */}
-            <div className="overlay font-serifmix text-[rgb(19,65,129)] p-11 text-[16.384px]">
-              — Unfold the sensibility between light and shadow, breathe beneath
-              water and air, sink into tranquility and ambience, and wander
-              along with architecture and poetry.
-            </div>
-          </div>
-        </div>
+      {/* 容器高度需固定，例如 h-64 或 h-[400px] */} {/* 加上 z-20 */}
+      <div className="text-[clamp(20px,3vw,20px)] z-20 overlay font-mixed p-11">
+        — Unfold the sensibility between light and shadow, breathe beneath water
+        and air, sink into tranquility and ambience, and wander along with
+        architecture and poetry.
       </div>
       {images.map((img, i) => (
         <div
@@ -43,7 +35,6 @@ export default function FadeCarousel({ images }) {
           />
         </div>
       ))}
-
       {/* 選擇性：加上指示點 (Dots)
       <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-2 z-20">
         {images.map((_, i) => (
