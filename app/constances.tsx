@@ -151,3 +151,11 @@ export const seedingImages: ImageData[] = [
   { src: "242382449_1791722104549286_600044980755895869_n.jpg", alt: "x" },
   { src: "246898587_10157865498871486_8487943744716560508_n.jpg", alt: "x" },
 ];
+
+export const ringsImages: ImageData[] = [
+  { src: "Zi-Xian_Szu-Yi-Wang_GNKK.jpg", alt: "x" },
+  { src: "Screen-Shot-2021-01-23-at-1.56.50-PM.png", alt: "x" },
+  { src: "Screen-Shot-2021-01-23-at-3.01.12-PM.png", alt: "x" },
+  { src: "Screen-Shot-2021-01-23-at-2.09.18-PM.png", alt: "x" },
+  { src: "Screen-Shot-2021-01-23-at-2.11.53-PM.png", alt: "x" },
+];
