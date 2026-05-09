@@ -159,3 +159,10 @@ export const ringsImages: ImageData[] = [
   { src: "Screen-Shot-2021-01-23-at-2.09.18-PM.png", alt: "x" },
   { src: "Screen-Shot-2021-01-23-at-2.11.53-PM.png", alt: "x" },
 ];
+
+export const writingBodyImages: ImageData[] = [
+  { src: "IMG_6227-copy.jpeg", alt: "x" },
+  { src: "IMG_6227.jpg", alt: "x" },
+  { src: "Screenshot-2025-12-30-at-16.55.40.png", alt: "x" },
+  { src: "Screenshot-2025-12-30-at-16.56.25.png", alt: "x" },
+];

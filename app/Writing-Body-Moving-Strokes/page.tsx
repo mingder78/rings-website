@@ -1,4 +1,6 @@
 import ImageLinksComponent from "@/components/ImageLinks";
+import CarouselGallery from "@/components/CarouselGallery";
+import { writingBodyImages } from "../constances";
 
 export default function RingsPage() {
   return (
@@ -142,6 +144,9 @@ export default function RingsPage() {
               </div>
             </div>
           </div>
+
+          <CarouselGallery images={writingBodyImages} />
+
           <div
             className="ytp-cued-thumbnail-overlay-image"
             style={{
@@ -167,7 +172,10 @@ export default function RingsPage() {
               allowFullScreen
             />
           </div>
-          <p>書寫身體 過程筆記&研究錄像</p>
+          <p className="text-muted-foreground italic">
+            書寫身體 過程筆記 & 研究錄像
+          </p>
+
           {/* Footer */}
           <ImageLinksComponent />
           <footer className="text-xs text-muted-foreground pt-12 border-t border-border">
