@@ -178,3 +178,27 @@ export const writingBodyImages2: ImageData[] = [
   { src: "82B6A502-4FB6-4811-915D-A4CDAC7587AEa.JPG", alt: "x" },
   { src: "IMG_2739.jpg", alt: "x" },
 ];
+
+export const youHouseImages: ImageData[] = [
+  { src: "Screen-Shot-2022-01-04-at-4.52.16-PM.png", alt: "x" },
+  { src: "Screen-Shot-2022-01-04-at-4.48.43-PM.png", alt: "x" },
+  { src: "Screen-Shot-2022-02-11-at-3.58.17-PM.png", alt: "x" },
+  { src: "Screen-Shot-2022-02-11-at-3.58.29-PM.png", alt: "x" },
+  { src: "Screen-Shot-2022-02-11-at-3.58.44-PM.png", alt: "x" },
+  { src: "Screen-Shot-2022-01-04-at-4.54.25-PM.png", alt: "x" },
+  { src: "Screen-Shot-2022-01-04-at-4.54.17-PM.png", alt: "x" },
+  { src: "Screen-Shot-2022-02-11-at-3.58.58-PM.png", alt: "x" },
+  { src: "Screen-Shot-2022-02-11-at-3.59.06-PM.png", alt: "x" },
+  { src: "Screen-Shot-2022-02-11-at-3.59.21-PM.png", alt: "x" },
+  { src: "Screen-Shot-2022-02-11-at-3.59.27-PM.png", alt: "x" },
+  { src: "Screen-Shot-2022-02-11-at-3.59.36-PM.png", alt: "x" },
+  { src: "Screen-Shot-2022-02-11-at-4.16.30-PM.png", alt: "x" },
+  { src: "exterior-02-02.jpg", alt: "x" },
+  { src: "inerior-02-03.jpg", alt: "x" },
+  { src: "Screen-Shot-2022-02-11-at-4.15.12-PM.png", alt: "x" },
+  { src: "Screen-Shot-2022-02-11-at-4.15.20-PM.png", alt: "x" },
+  { src: "Screen-Shot-2022-02-11-at-4.15.29-PM.png", alt: "x" },
+  { src: "Screen-Shot-2022-02-11-at-4.15.40-PM.png", alt: "x" },
+  { src: "Screen-Shot-2022-02-11-at-4.19.33-PM.png", alt: "x" },
+  { src: "Screen-Shot-2022-02-11-at-4.16.04-PM.png", alt: "x" },
+];

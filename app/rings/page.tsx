@@ -7,7 +7,7 @@ export default function RingsPage() {
     <div className="font-mixed flex min-h-screen bg-background text-foreground md:pl-60">
       {/* Main Content */}
       <main className="flex-1 sm:px-12 md:px-4">
-        <div className="py-6 px-6 space-y-12 bg-slate-0">
+        <div className="py-6 sm:py-12 px-8  space-y-12 bg-slate-0">
           {" "}
           {/* Title Section */}
           <div
