@@ -1,10 +1,7 @@
 import ImageLinksComponent from "@/components/ImageLinks";
 import CarouselGallery from "@/components/CarouselGallery";
 import { writingBodyImages, writingBodyImages2 } from "../constances";
-const thumbnail =
-  "https://i.vimeocdn.com/video/2101547946-d3bc33bb05891bd7bbc3d6a04d1abeec2c486759a59d89be1bc16b17248f7bd5-d?mw=1300&mh=732&q=70";
-const video1 =
-  "https://i.vimeocdn.com/video/2101547946-d3bc33bb05891bd7bbc3d6a04d1abeec2c486759a59d89be1bc16b17248f7bd5-d?mw=1300&amp;mh=732&amp;q=70";
+
 export default function RingsPage() {
   return (
     <div className="font-mixed flex min-h-screen bg-background text-foreground md:pl-60">

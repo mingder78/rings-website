@@ -4,7 +4,7 @@ import { ringsImages } from "../constances";
 
 export default function RingsPage() {
   return (
-    <div className="flex min-h-screen bg-background text-foreground md:pl-60">
+    <div className="font-mixed flex min-h-screen bg-background text-foreground md:pl-60">
       {/* Main Content */}
       <main className="flex-1 px-4 sm:px-6 md:px-12">
         <div className="px-4 sm:px-6 md:px-12 py-12 space-y-12 bg-slate-0">
@@ -21,7 +21,7 @@ export default function RingsPage() {
             <div className="bg-red-0 col-span-1 row-span-1">
               {/* Item 1 */}
               <div>
-                <p className="text-lg leading-relaxed space-y-2">
+                <p className="text-sm leading-relaxed space-y-2">
                   Rings︎{" "}
                   <span className="text-muted-foreground">&infin; 環</span>
                 </p>
@@ -30,7 +30,7 @@ export default function RingsPage() {
             <div className="bg-yellow-0 col-span-1 row-span-1">
               {/* Item 2 */}
               <div>
-                <p className="text-lg leading-relaxed space-y-2">
+                <p className="text-sm leading-relaxed space-y-2">
                   <em>
                     While language serves as the connector as well as the
                     barrier;
@@ -64,7 +64,7 @@ export default function RingsPage() {
                 </div>
               </section>
               {/* Exhibition Info */}
-              <section className="space-y-4 text-lg leading-relaxed">
+              <section className="space-y-4 text-sm leading-relaxed">
                 <p>
                   <strong>
                     <br />
@@ -79,11 +79,11 @@ export default function RingsPage() {
                 {" "}
                 {/* Quote */}
                 {/* Main Description */}
-                <section className="space-y-4 text-lg leading-relaxed">
+                <section className="space-y-4 text-sm leading-relaxed">
                   <p>
                     <br />
                     <br />
-                    <strong className="font-normal">
+                    <strong className="font-mixed">
                       "A Hanzi is a poetry itself." —Anke Bangma
                     </strong>
                   </p>
@@ -96,7 +96,7 @@ export default function RingsPage() {
               <div>
                 {" "}
                 {/* Credits */}
-                <section className="text-lg text-muted-foreground space-y-1">
+                <section className="text-sm text-muted-foreground space-y-1">
                   <p>
                     Presented in the exhibition 'Wat ik je nog wilde zeggen'
                     (What else I wanted to tell you) co-curated by Rianne
@@ -111,7 +111,7 @@ export default function RingsPage() {
               <div>
                 {" "}
                 {/* Video/Response Section */}
-                <p className="text-lg leading-relaxed italic">
+                <p className="text-sm leading-relaxed italic">
                   Zi Xian, with a specific display unfolding the fragility and
                   timelessness of languages as our tools, is invited to be part
                   of the dialogues seeking the lost narrative and found forms of
@@ -153,7 +153,7 @@ export default function RingsPage() {
                       </em>
                     </strong>
                     <br />
-                    <span className="not-italic font-medium">
+                    <span className="not-italic font-mixed">
                       —Amara van der Elst
                     </span>
                   </p>
@@ -167,19 +167,18 @@ export default function RingsPage() {
                   <div className="space-y-4 text-sm">
                     <div className="space-y-1">
                       <p>
-                        <span className="font-medium">Gedicht:</span> Amara van
+                        <span className="font-mixed">Gedicht:</span> Amara van
                         der Elst
                       </p>
                       <p>
-                        <span className="font-medium">Organisatie:</span>{" "}
+                        <span className="font-mixed">Organisatie:</span>{" "}
                         Paginagroots
                       </p>
                       <p>
-                        <span className="font-medium">Beeld:</span> Elyssio
-                        Ramos
+                        <span className="font-mixed">Beeld:</span> Elyssio Ramos
                       </p>
                       <p>
-                        <span className="font-medium">Muziek:</span> Eetieeetds
+                        <span className="font-mixed">Muziek:</span> Eetieeetds
                       </p>
                     </div>
                   </div>
