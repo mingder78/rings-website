@@ -166,3 +166,15 @@ export const writingBodyImages: ImageData[] = [
   { src: "Screenshot-2025-12-30-at-16.55.40.png", alt: "x" },
   { src: "Screenshot-2025-12-30-at-16.56.25.png", alt: "x" },
 ];
+
+export const writingBodyImages2: ImageData[] = [
+  { src: "IMG_3835.jpg", alt: "x" },
+  { src: "IMG_2645-a.jpeg", alt: "x" },
+  { src: "IMG_2648.jpg", alt: "x" },
+  { src: "OriginalPhoto-785004629.697094.jpg", alt: "x" },
+  { src: "OriginalPhoto-785004606.90686.jpg", alt: "x" },
+  { src: "OriginalPhoto-785004579.609438.jpg", alt: "x" },
+  { src: "OriginalPhoto-785005103.119686.jpg", alt: "x" },
+  { src: "82B6A502-4FB6-4811-915D-A4CDAC7587AEa.JPG", alt: "x" },
+  { src: "IMG_2739.jpg", alt: "x" },
+];

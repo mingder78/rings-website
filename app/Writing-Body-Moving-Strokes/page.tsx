@@ -1,7 +1,10 @@
 import ImageLinksComponent from "@/components/ImageLinks";
 import CarouselGallery from "@/components/CarouselGallery";
-import { writingBodyImages } from "../constances";
-
+import { writingBodyImages, writingBodyImages2 } from "../constances";
+const thumbnail =
+  "https://i.vimeocdn.com/video/2101547946-d3bc33bb05891bd7bbc3d6a04d1abeec2c486759a59d89be1bc16b17248f7bd5-d?mw=1300&mh=732&q=70";
+const video1 =
+  "https://i.vimeocdn.com/video/2101547946-d3bc33bb05891bd7bbc3d6a04d1abeec2c486759a59d89be1bc16b17248f7bd5-d?mw=1300&amp;mh=732&amp;q=70";
 export default function RingsPage() {
   return (
     <div className="font-mixed flex min-h-screen bg-background text-foreground md:pl-60">
@@ -70,9 +73,9 @@ export default function RingsPage() {
                     荷蘭 iii Den Haag, PANT 台荷藝集 協力
                     <br />
                     <br />
-                    <p className="text-foreground">
-                      在研究成果之交流展演中，王思懿與音樂家、舞者及口說表演者等不同領域之（表演）藝術家進行即興互動與交流，透過人與人（身體）、人與非人（語言／氣候自然）的共演實驗，交換對漢字之身體性、空間性與環境感知的理解。
-                    </p>
+                  </p>
+                  <p className="text-foreground">
+                    在研究成果之交流展演中，王思懿與音樂家、舞者及口說表演者等不同領域之（表演）藝術家進行即興互動與交流，透過人與人（身體）、人與非人（語言／氣候自然）的共演實驗，交換對漢字之身體性、空間性與環境感知的理解。
                   </p>
                 </section>
               </div>
@@ -176,6 +179,36 @@ export default function RingsPage() {
             書寫身體 過程筆記 & 研究錄像
           </p>
 
+          <CarouselGallery images={writingBodyImages2} />
+
+          <div className="w-full aspect-video">
+            <iframe
+              src="https://player.vimeo.com/video/1150630068"
+              className="w-full h-full rounded-xl"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+
+          <div className="w-full aspect-video">
+            <iframe
+              src="https://player.vimeo.com/video/1150640244"
+              className="w-full h-full rounded-xl"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+
+          <div>
+            <br />
+            <i>
+              本研究由台灣國藝會 贊助
+              <br />
+              荷蘭 iii Den Haag, PANT 台荷藝集 協力
+            </i>
+          </div>
+
+          <p className="text-xs text-muted-foreground pt-12 border-t border-border"></p>
           {/* Footer */}
           <ImageLinksComponent />
           <footer className="text-xs text-muted-foreground pt-12 border-t border-border">

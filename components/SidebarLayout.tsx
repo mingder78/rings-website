@@ -52,9 +52,9 @@ export default function SidebarLayout() {
             sidebarOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          <div className="space-y-8 font-serifmix">
+          <div className="space-y-8 font-mixed">
             {/* Header */}
-            <a href="/" rel="history" className="font-serifmix text-gray-700">
+            <a href="/" rel="history" className=" text-gray-700">
               <span className="block">WANG, 王</span>
               <span className="block">SZU-YI 思 懿</span>
               {`|`}
