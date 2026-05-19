@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 export type ImageItem = {
   src: string;
   caption?: string;
+  colSpan?: number;
+  rowSpan?: number;
 };
 
 export default function Gallery({ images }: { images: ImageItem[] }) {
@@ -28,9 +30,9 @@ export default function Gallery({ images }: { images: ImageItem[] }) {
   return (
     <>
       {/* SCROLL MODE */}
-      <div className="gallery">
+      <div className="w-64 h-64 overflow-hidden">
         {images.map((img, i) => (
-          <section className="item" key={i}>
+          <section className="w-full h-full object-cover" key={i}>
             <img
               src={img.src}
               onClick={() => {

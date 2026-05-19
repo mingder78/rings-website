@@ -11,10 +11,10 @@ type Props = {
 
 export default function ScrollGallery({ images }: Props) {
   return (
-    <div className="gallery">
+    <div className="wrapper">
       {images.map((img, i) => (
         <section className="scene" key={i}>
-          <div className="frame">
+          <div className="box box2">
             <img src={img.src} alt={img.caption || `image-${i}`} />
           </div>
 
@@ -23,48 +23,90 @@ export default function ScrollGallery({ images }: Props) {
       ))}
 
       <style>{`
-        .gallery {
-          background: #fff;
+        .wrapper {
+         display: grid;
+          /* Creates three columns: one 200px wide and two that share remaining space equally */
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+          gap: 20px; /* Optional: adds space between items */
+        }
+
+        .box {
+          border: 5px;
+        }
+
+
+        .box img {
           width: 100%;
+          height: 100%;
         }
 
-        /* each image becomes a "story scene" */
-        .scene {
-          min-height: 100vh;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding: 100px 24px;
+        .box1 img {
+          object-fit: cover;
         }
 
-        /* image container controls max width like art book */
-        .frame {
-          width: min(1100px, 92vw);
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        .box2 img {
+          object-fit: contain;
         }
 
-        .frame img {
-          width: 100%;
-          height: auto;
-          display: block;
-          object-fit: contain; /* critical: no crop */
+        .box3 img {
+          object-fit: fill;
         }
 
-        .caption {
-          margin-top: 18px;
-          font-size: 14px;
-          color: #666;
-          text-align: center;
-          max-width: 640px;
-          line-height: 1.5;
+        /* =========================
+           Large screen
+        ========================= */
+        @media (min-width: 1024px) {
+          .wrapper {
+            grid-template-columns: repeat(
+              auto-fill,
+              minmax(100px, 1fr)
+            );
+
+            gap: 24px;
+          }
+
+          .box {
+            height: 320px;
+          }
         }
 
-        /* subtle spacing rhythm like editorial design */
-        .scene + .scene {
-          border-top: 1px solid #f3f3f3;
+        /* =========================
+           Medium screen
+        ========================= */
+        @media (max-width: 1023px) {
+          .wrapper {
+            grid-template-columns: repeat(
+              auto-fill,
+              minmax(220px, 1fr)
+            );
+
+            gap: 16px;
+          }
+
+          .box {
+            height: 240px;
+          }
+        }
+
+        /* =========================
+           Small screen
+        ========================= */
+        @media (max-width: 640px) {
+          .wrapper {
+            grid-template-columns: 1fr;
+
+            gap: 12px;
+          }
+
+          .box {
+            height: auto;
+          }
+
+          .box img {
+            width: 100%;
+            height: auto;
+          }
         }
       `}</style>
     </div>
