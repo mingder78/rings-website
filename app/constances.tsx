@@ -6,15 +6,14 @@
  images for
 */
 
-export type ImageData = {
-  src: string;
-  alt: string;
-};
+export type ImageData = string;
 
 export type ImageData2 = {
   rowSpan: number;
+  scale: string;
   src: string;
   alt: string;
+  col: string;
 };
 
 export const carouselImages = [
@@ -128,83 +127,97 @@ export const otherSections = [
 ];
 
 export const huaiImages: ImageData[] = [
-  { src: "Screen-Shot-2020-03-20-at-11.21.10-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-11.47.40-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-11.44.27-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-11.00.48-AM.png", alt: "x" },
-  { src: "sketch_plancluster.jpg", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-11.24.32-AM.png", alt: "x" },
-  { src: "diagram_nrcollage.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-10.58.54-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-10.58.28-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-11.22.58-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-11.00.32-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-11.00.13-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-10.59.59-AM.png", alt: "x" },
-  { src: "Screen-Shot-2020-03-20-at-11.21.10-AM.png", alt: "x" },
+  "Screen-Shot-2020-03-20-at-11.21.10-AM.png",
+  "Screen-Shot-2020-03-20-at-11.47.40-AM.png",
+  "Screen-Shot-2020-03-20-at-11.44.27-AM.png",
+  "Screen-Shot-2020-03-20-at-11.00.48-AM.png",
+  "sketch_plancluster.jpg",
+  "Screen-Shot-2020-03-20-at-11.24.32-AM.png",
+  "diagram_nrcollage.png",
+  "Screen-Shot-2020-03-20-at-10.58.54-AM.png",
+  "Screen-Shot-2020-03-20-at-10.58.28-AM.png",
+  "Screen-Shot-2020-03-20-at-11.22.58-AM.png",
+  "Screen-Shot-2020-03-20-at-11.00.32-AM.png",
+  "Screen-Shot-2020-03-20-at-11.00.13-AM.png",
+  "Screen-Shot-2020-03-20-at-10.59.59-AM.png",
+  "Screen-Shot-2020-03-20-at-11.21.10-AM.png",
 ];
 
 export const seedingImages: ImageData[] = [
-  { src: "PXL_20210910_173418394.jpg", alt: "x" },
-  { src: "Screenshot_20211106-021331_2.png", alt: "x" },
-  { src: "PXL_20210910_173659861.jpg", alt: "x" },
-  { src: "PXL_20210910_175328593.jpg", alt: "x" },
-  { src: "PXL_20210910_173432366.jpg", alt: "x" },
-  { src: "A6DF5CE0-5399-494D-BA0A-C3E31A87E3E6.jpg", alt: "x" },
-  { src: "246439937_10157865498606486_8503072133344096881_n.jpg", alt: "x" },
-  { src: "FAB0F8F9-BBE3-4634-B418-0D067A893328.jpg", alt: "x" },
-  { src: "Tent-divers-expo-10sept21.jpeg", alt: "x" },
-  { src: "242382449_1791722104549286_600044980755895869_n.jpg", alt: "x" },
-  { src: "246898587_10157865498871486_8487943744716560508_n.jpg", alt: "x" },
+  "PXL_20210910_173418394.jpg",
+  "Screenshot_20211106-021331_2.png",
+  "PXL_20210910_173659861.jpg",
+  "PXL_20210910_175328593.jpg",
+  "PXL_20210910_173432366.jpg",
+  "A6DF5CE0-5399-494D-BA0A-C3E31A87E3E6.jpg",
+  "246439937_10157865498606486_8503072133344096881_n.jpg",
+  "FAB0F8F9-BBE3-4634-B418-0D067A893328.jpg",
+  "Tent-divers-expo-10sept21.jpeg",
+  "242382449_1791722104549286_600044980755895869_n.jpg",
+  "246898587_10157865498871486_8487943744716560508_n.jpg",
 ];
 
 export const ringsImages: ImageData[] = [
-  { src: "Zi-Xian_Szu-Yi-Wang_GNKK.jpg", alt: "x" },
-  { src: "Screen-Shot-2021-01-23-at-1.56.50-PM.png", alt: "x" },
-  { src: "Screen-Shot-2021-01-23-at-3.01.12-PM.png", alt: "x" },
-  { src: "Screen-Shot-2021-01-23-at-2.09.18-PM.png", alt: "x" },
-  { src: "Screen-Shot-2021-01-23-at-2.11.53-PM.png", alt: "x" },
+  "Zi-Xian_Szu-Yi-Wang_GNKK.jpg",
+  "Screen-Shot-2021-01-23-at-1.56.50-PM.png",
+  "Screen-Shot-2021-01-23-at-3.01.12-PM.png",
+  "Screen-Shot-2021-01-23-at-2.09.18-PM.png",
+  "Screen-Shot-2021-01-23-at-2.11.53-PM.png",
 ];
 
 export const writingBodyImages: ImageData[] = [
-  { src: "IMG_6227-copy.jpeg", alt: "x" },
-  { src: "IMG_6227.jpg", alt: "x" },
-  { src: "Screenshot-2025-12-30-at-16.55.40.png", alt: "x" },
-  { src: "Screenshot-2025-12-30-at-16.56.25.png", alt: "x" },
+  "IMG_6227-copy.jpeg",
+  "IMG_6227.jpg",
+  "Screenshot-2025-12-30-at-16.55.40.png",
+  "Screenshot-2025-12-30-at-16.56.25.png",
 ];
 
 export const writingBodyImages2: ImageData[] = [
-  { src: "IMG_3835.jpg", alt: "x" },
-  { src: "IMG_2645-a.jpeg", alt: "x" },
-  { src: "IMG_2648.jpg", alt: "x" },
-  { src: "OriginalPhoto-785004629.697094.jpg", alt: "x" },
-  { src: "OriginalPhoto-785004606.90686.jpg", alt: "x" },
-  { src: "OriginalPhoto-785004579.609438.jpg", alt: "x" },
-  { src: "OriginalPhoto-785005103.119686.jpg", alt: "x" },
-  { src: "82B6A502-4FB6-4811-915D-A4CDAC7587AEa.JPG", alt: "x" },
-  { src: "IMG_2739.jpg", alt: "x" },
+  "IMG_3835.jpg",
+  "IMG_2645-a.jpeg",
+  "IMG_2648.jpg",
+  "OriginalPhoto-785004629.697094.jpg",
+  "OriginalPhoto-785004606.90686.jpg",
+  "OriginalPhoto-785004579.609438.jpg",
+  "OriginalPhoto-785005103.119686.jpg",
+  "82B6A502-4FB6-4811-915D-A4CDAC7587AEa.JPG",
+  "IMG_2739.jpg",
 ];
 
-export const youHouseImages: ImageData2[] = [
-  { src: "Screen-Shot-2022-01-04-at-4.52.16-PM.png", alt: "x", rowSpan: 2 },
-  { src: "Screen-Shot-2022-01-04-at-4.48.43-PM.png", alt: "x" },
-  { src: "Screen-Shot-2022-02-11-at-3.58.17-PM.png", alt: "x" },
-  { src: "Screen-Shot-2022-02-11-at-3.58.29-PM.png", alt: "x" },
-  { src: "Screen-Shot-2022-02-11-at-3.58.44-PM.png", alt: "x" },
-  { src: "Screen-Shot-2022-01-04-at-4.54.25-PM.png", alt: "x" },
-  { src: "Screen-Shot-2022-01-04-at-4.54.17-PM.png", alt: "x" },
-  { src: "Screen-Shot-2022-02-11-at-3.58.58-PM.png", alt: "x" },
-  { src: "Screen-Shot-2022-02-11-at-3.59.06-PM.png", alt: "x" },
-  { src: "Screen-Shot-2022-02-11-at-3.59.21-PM.png", alt: "x" },
-  { src: "Screen-Shot-2022-02-11-at-3.59.27-PM.png", alt: "x" },
-  { src: "Screen-Shot-2022-02-11-at-3.59.36-PM.png", alt: "x" },
-  { src: "Screen-Shot-2022-02-11-at-4.16.30-PM.png", alt: "x" },
-  { src: "exterior-02-02.jpg", alt: "x" },
-  { src: "inerior-02-03.jpg", alt: "x" },
-  { src: "Screen-Shot-2022-02-11-at-4.15.12-PM.png", alt: "x" },
-  { src: "Screen-Shot-2022-02-11-at-4.15.20-PM.png", alt: "x" },
-  { src: "Screen-Shot-2022-02-11-at-4.15.29-PM.png", alt: "x" },
-  { src: "Screen-Shot-2022-02-11-at-4.15.40-PM.png", alt: "x" },
-  { src: "Screen-Shot-2022-02-11-at-4.19.33-PM.png", alt: "x" },
-  { src: "Screen-Shot-2022-02-11-at-4.16.04-PM.png", alt: "x" },
+export const youHouseLayouts = [
+  "1fr",
+  "2fr 1fr",
+  "1fr",
+  "1fr",
+  "1fr 1fr",
+  "1fr 1fr",
+  "1fr 1fr 1fr",
+  "1fr",
+  "1fr 1fr",
+  "1fr 1fr 1fr 1fr",
+  "1fr",
+];
+
+export const youHouseImages: ImageData[] = [
+  "Screen-Shot-2022-01-04-at-4.52.16-PM.png",
+  "Screen-Shot-2022-01-04-at-4.48.43-PM.png",
+  "Screen-Shot-2022-02-11-at-3.58.17-PM.png",
+  "Screen-Shot-2022-02-11-at-3.58.29-PM.png",
+  "Screen-Shot-2022-02-11-at-3.58.44-PM.png",
+  "Screen-Shot-2022-01-04-at-4.54.25-PM.png",
+  "Screen-Shot-2022-01-04-at-4.54.17-PM.png",
+  "Screen-Shot-2022-02-11-at-3.58.58-PM.png",
+  "Screen-Shot-2022-02-11-at-3.59.06-PM.png",
+  "Screen-Shot-2022-02-11-at-3.59.21-PM.png",
+  "Screen-Shot-2022-02-11-at-3.59.27-PM.png",
+  "Screen-Shot-2022-02-11-at-3.59.36-PM.png",
+  "Screen-Shot-2022-02-11-at-4.16.30-PM.png",
+  "exterior-02-02.jpg",
+  "inerior-02-03.jpg",
+  "Screen-Shot-2022-02-11-at-4.15.12-PM.png",
+  "Screen-Shot-2022-02-11-at-4.15.20-PM.png",
+  "Screen-Shot-2022-02-11-at-4.15.29-PM.png",
+  "Screen-Shot-2022-02-11-at-4.15.40-PM.png",
+  "Screen-Shot-2022-02-11-at-4.19.33-PM.png",
+  "Screen-Shot-2022-02-11-at-4.16.04-PM.png",
 ];

@@ -1,6 +1,6 @@
 import ImageLinksComponent from "@/components/ImageLinks";
-import CarouselGallery,  from "@/components/CarouselGallery";
-import { youHouseImages } from "../constances";
+import CarouselGallery from "@/components/CarouselGallery";
+import { youHouseImages, youHouseLayouts } from "../constances";
 
 export default function RingsPage() {
   return (
@@ -159,7 +159,7 @@ export default function RingsPage() {
             </div>
           </div>
           <hr></hr>
-          <CarouselGallery images={youHouseImages} />
+          <CarouselGallery images={youHouseImages} layouts={youHouseLayouts} />
           <hr></hr>
           <p className="text-center text-foreground">
             More drawings & architectural details will be updated later.

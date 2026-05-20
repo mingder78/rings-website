@@ -3,10 +3,12 @@
 import { useState, useRef } from "react";
 import { type ImageData } from "../app/constances";
 
-export default function CarouselGallery({ images }) {
+export default function CarouselGallery({ images, layouts }) {
+  let imageIndex = 0;
   const modalRef = useRef<HTMLDialogElement>(null);
 
   const openModal = (imgId: string) => {
+    console.log(imgId);
     modalRef.current?.showModal();
     // Use the native scrollIntoView to jump to the clicked image in the carousel
     document
@@ -16,32 +18,50 @@ export default function CarouselGallery({ images }) {
 
   return (
     <div className="gallery-wrapper">
-      <div className="wrapper">
-        {images.map((img, i) => (
-          <section
-            key={i}
-            style={{
-              gridRow: `span ${img.rowSpan || 1}`,
-            }}
-          >
+      <div className="space-y-20">
+        {layouts.map((columns, rowIndex) => {
+          // count columns in current row
+          const count = columns.split(" ").length;
+
+          // get images for this row
+          const rowImages = images.slice(imageIndex, imageIndex + count);
+
+          // move image pointer
+          imageIndex += count;
+
+          return (
             <div
-              className="box box2 cursor-zoom-in overflow-hidden rounded-box"
-              onClick={() => openModal(i)}
+              key={rowIndex}
+              className="grid gap-20 box box2"
               style={{
-                height: img.height || "100%",
+                gridTemplateColumns: columns,
               }}
+              onClick={() => openModal(`${rowIndex}`)}
             >
-              <img src={img.src} alt={img.caption || `image-${i}`} />
+              {rowImages.map((img, index) => (
+                <div key={index} className="overflow-hidden">
+                  <img
+                    src={img}
+                    alt=""
+                    className="
+                        w-full
+                        h-[220px]
+                        md:h-[320px]
+                        object-cover
+                        transition-transform
+                        duration-500
+                        hover:scale-105
+                      "
+                  />
+                </div>
+              ))}
             </div>
-
-            {img.caption && <div className="caption">{img.caption}</div>}
-          </section>
-        ))}
+          );
+        })}
       </div>
-
       {/* 2. Zoom Modal with Carousel */}
       <dialog ref={modalRef} className="modal">
-        <div className="modal-box max-w-5xl p-0 bg-transparent overflow-visible">
+        <div className=" max-w-5xl p-0 bg-transparent overflow-visible">
           {/* Close Icon */}
           <form method="dialog">
             <button className="btn btn-sm btn-circle absolute right-4 top-4 z-50">
@@ -60,7 +80,7 @@ export default function CarouselGallery({ images }) {
                 {/* Clicking image closes the modal */}
                 <form method="dialog" className="w-full">
                   <button className="w-full p-0 border-none bg-transparent cursor-zoom-out block">
-                    <img src={img.src} className="w-full" alt={img.alt} />
+                    <img src={img} className="w-full" alt={img} />
                   </button>
                 </form>
               </div>
@@ -79,10 +99,36 @@ export default function CarouselGallery({ images }) {
       </dialog>
       <style>
         {`
+          .break {
+            grid-column: 1 / -1;
+          }
+          .item-a { grid-column: span 2; } /* takes 2 columns */
+          .item-b { grid-column: span 4; } /* takes 4 columns */
+          .item-c { grid-column: span 4; } /* takes 4 columns */
+          .w2 { grid-column: span 2; }
+          .w4 { grid-column: span 4; }
+          .w5 { grid-column: span 5; }
+          .w20 { grid-column: span 2; } /* 20% */
+          .w40 { grid-column: span 4; } /* 40% */
+          .w50 { grid-column: span 5; } /* 50% */
+          .grid2 {
+            display: grid;
+
+          }
+          .item {
+            padding: 0px;
+            background: #ff0;
+            border: 5px solid #999;
+          }
+          .t-1 img {
+            padding: 0px;
+            background: #fff;
+            border: 10px solid #0f0;
+          }
         .wrapper {
          display: grid;
           /* Creates three columns: one 200px wide and two that share remaining space equally */
-          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
           gap: 20px; /* Optional: adds space between items */
         }
@@ -133,11 +179,14 @@ export default function CarouselGallery({ images }) {
            Small screen
         ========================= */
         @media (max-width: 640px) {
+        .grid {
+            grid-template-columns: 1fr !important;
+          }
           .gallery-wrapper {
             padding: 0px;
           }
           .wrapper {
-            grid-template-columns: 1fr;
+            grid-template-columns: 2fr;
             gap: 12px;
           }
 
