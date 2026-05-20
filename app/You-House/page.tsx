@@ -1,5 +1,5 @@
 import ImageLinksComponent from "@/components/ImageLinks";
-import CarouselGallery from "@/components/CarouselGallery";
+import CarouselGallery,  from "@/components/CarouselGallery";
 import { youHouseImages } from "../constances";
 
 export default function RingsPage() {

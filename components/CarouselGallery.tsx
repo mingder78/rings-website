@@ -15,21 +15,27 @@ export default function CarouselGallery({ images }) {
   };
 
   return (
-    <div className="p-10">
-      {/* 1. Thumbnail Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
-        {images.map((img, id) => (
-          <div
-            key={id}
-            className="cursor-zoom-in overflow-hidden rounded-box"
-            onClick={() => openModal(id)}
+    <div className="gallery-wrapper">
+      <div className="wrapper">
+        {images.map((img, i) => (
+          <section
+            key={i}
+            style={{
+              gridRow: `span ${img.rowSpan || 1}`,
+            }}
           >
-            <img
-              src={img.src}
-              alt={img.alt}
-              className="w-full h-full object-cover"
-            />
-          </div>
+            <div
+              className="box box2 cursor-zoom-in overflow-hidden rounded-box"
+              onClick={() => openModal(i)}
+              style={{
+                height: img.height || "100%",
+              }}
+            >
+              <img src={img.src} alt={img.caption || `image-${i}`} />
+            </div>
+
+            {img.caption && <div className="caption">{img.caption}</div>}
+          </section>
         ))}
       </div>
 
@@ -71,6 +77,81 @@ export default function CarouselGallery({ images }) {
           <button>close</button>
         </form>
       </dialog>
+      <style>
+        {`
+        .wrapper {
+         display: grid;
+          /* Creates three columns: one 200px wide and two that share remaining space equally */
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+          gap: 20px; /* Optional: adds space between items */
+        }
+
+        .box {
+          border: 5px;
+        }
+
+
+        .box img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .box1 img {
+          object-fit: cover;
+        }
+
+        .box2 img {
+          object-fit: contain;
+        }
+
+        .box3 img {
+          object-fit: fill;
+        }
+
+
+
+        /* =========================
+           Medium screen
+        ========================= */
+        @media (max-width: 1023px) {
+          .wrapper {
+            grid-template-columns: repeat(
+              auto-fill,
+              minmax(220px, 1fr)
+            );
+
+            gap: 16px;
+          }
+
+          .box {
+            height: 240px;
+          }
+        }
+
+        /* =========================
+           Small screen
+        ========================= */
+        @media (max-width: 640px) {
+          .gallery-wrapper {
+            padding: 0px;
+          }
+          .wrapper {
+            grid-template-columns: 1fr;
+            gap: 12px;
+          }
+
+          .box {
+            height: auto;
+          }
+
+          .box img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      `}
+      </style>
     </div>
   );
 }

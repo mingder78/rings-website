@@ -11,6 +11,12 @@ export type ImageData = {
   alt: string;
 };
 
+export type ImageData2 = {
+  rowSpan: number;
+  src: string;
+  alt: string;
+};
+
 export const carouselImages = [
   "IMG_6562_bbg_crpoed.jpg",
   "000023.jpg",
@@ -179,8 +185,8 @@ export const writingBodyImages2: ImageData[] = [
   { src: "IMG_2739.jpg", alt: "x" },
 ];
 
-export const youHouseImages: ImageData[] = [
-  { src: "Screen-Shot-2022-01-04-at-4.52.16-PM.png", alt: "x" },
+export const youHouseImages: ImageData2[] = [
+  { src: "Screen-Shot-2022-01-04-at-4.52.16-PM.png", alt: "x", rowSpan: 2 },
   { src: "Screen-Shot-2022-01-04-at-4.48.43-PM.png", alt: "x" },
   { src: "Screen-Shot-2022-02-11-at-3.58.17-PM.png", alt: "x" },
   { src: "Screen-Shot-2022-02-11-at-3.58.29-PM.png", alt: "x" },
