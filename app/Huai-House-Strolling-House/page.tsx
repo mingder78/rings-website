@@ -4,7 +4,7 @@ import { huaiImages } from "../constances";
 
 export default function RingsPage() {
   return (
-    <div className="font-mixed flex min-h-screen bg-background text-foreground md:pl-60">
+    <div className="font-ebgaramond flex min-h-screen bg-background text-foreground md:pl-60">
       {/* Main Content */}
       <main className="flex-1 sm:px-12 md:px-4">
         <div className="py-6 sm:py-12 px-8  space-y-12 bg-slate-0">

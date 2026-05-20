@@ -4,7 +4,7 @@ import { ringsImages } from "../constances";
 
 export default function RingsPage() {
   return (
-    <div className="font-mixed flex min-h-screen bg-background text-foreground md:pl-60">
+    <div className="font-ebgaramond flex min-h-screen bg-background text-foreground md:pl-60">
       {/* Main Content */}
       <main className="flex-1 sm:px-12 md:px-4">
         <div className="py-6 sm:py-12 px-8  space-y-12 bg-slate-0">
@@ -84,7 +84,7 @@ export default function RingsPage() {
                   <p>
                     <br />
                     <br />
-                    <strong className="font-mixed">
+                    <strong className="font-ebgaramond">
                       "A Hanzi is a poetry itself." —Anke Bangma
                     </strong>
                   </p>
@@ -154,7 +154,7 @@ export default function RingsPage() {
                       </em>
                     </strong>
                     <br />
-                    <span className="not-italic font-mixed">
+                    <span className="not-italic font-ebgaramond">
                       —Amara van der Elst
                     </span>
                   </p>
@@ -168,18 +168,20 @@ export default function RingsPage() {
                   <div className="space-y-4 text-sm">
                     <div className="space-y-1">
                       <p>
-                        <span className="font-mixed">Gedicht:</span> Amara van
-                        der Elst
+                        <span className="font-ebgaramond">Gedicht:</span> Amara
+                        van der Elst
                       </p>
                       <p>
-                        <span className="font-mixed">Organisatie:</span>{" "}
+                        <span className="font-ebgaramond">Organisatie:</span>{" "}
                         Paginagroots
                       </p>
                       <p>
-                        <span className="font-mixed">Beeld:</span> Elyssio Ramos
+                        <span className="font-ebgaramond">Beeld:</span> Elyssio
+                        Ramos
                       </p>
                       <p>
-                        <span className="font-mixed">Muziek:</span> Eetieeetds
+                        <span className="font-ebgaramond">Muziek:</span>{" "}
+                        Eetieeetds
                       </p>
                     </div>
                   </div>

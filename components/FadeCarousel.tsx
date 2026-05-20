@@ -15,7 +15,7 @@ export default function FadeCarousel({ images }: { images: string[] }) {
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* 容器高度需固定，例如 h-64 或 h-[400px] */} {/* 加上 z-20 */}
-      <div className="text-[clamp(20px,3vw,20px)] z-20 overlay font-mixed p-11">
+      <div className="text-[clamp(20px,3vw,20px)] z-20 overlay font-ebgaramond p-11">
         — Unfold the sensibility between light and shadow, breathe beneath water
         and air, sink into tranquility and ambience, and wander along with
         architecture and poetry.
