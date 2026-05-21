@@ -1,6 +1,6 @@
 import ImageLinksComponent from "@/components/ImageLinks";
 import CarouselGallery from "@/components/CarouselGallery";
-import { huaiImages } from "../constances";
+import { huaiImages, huaiLayouts } from "../constances";
 
 export default function RingsPage() {
   return (
@@ -150,8 +150,8 @@ export default function RingsPage() {
             </div>
           </div>
 
-          <CarouselGallery images={huaiImages} />
-
+          <CarouselGallery images={huaiImages} layouts={huaiLayouts} />
+          <hr></hr>
           {/* Footer */}
           <ImageLinksComponent />
           <footer className="text-xs text-muted-foreground pt-12 border-t border-border">

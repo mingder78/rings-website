@@ -126,8 +126,23 @@ export const otherSections = [
   ["cv", "/cv"],
 ];
 
+export const huaiLayouts = [
+  "1fr",
+  "1fr",
+  "1fr",
+  "1fr 1fr",
+  "1fr 1fr",
+  "1fr",
+  "1fr",
+  "1fr",
+  "1fr",
+  "1fr",
+  "1fr",
+  "1fr",
+];
+
 export const huaiImages: ImageData[] = [
-  "Screen-Shot-2020-03-20-at-11.21.10-AM.png",
+  "Screen-Shot-2020-03-20-at-11.48.15-AM.png",
   "Screen-Shot-2020-03-20-at-11.47.40-AM.png",
   "Screen-Shot-2020-03-20-at-11.44.27-AM.png",
   "Screen-Shot-2020-03-20-at-11.00.48-AM.png",
@@ -140,6 +155,7 @@ export const huaiImages: ImageData[] = [
   "Screen-Shot-2020-03-20-at-11.00.32-AM.png",
   "Screen-Shot-2020-03-20-at-11.00.13-AM.png",
   "Screen-Shot-2020-03-20-at-10.59.59-AM.png",
+  "Screen-Shot-2020-03-20-at-11.21.10-AM.png",
   "Screen-Shot-2020-03-20-at-11.21.10-AM.png",
 ];
 
