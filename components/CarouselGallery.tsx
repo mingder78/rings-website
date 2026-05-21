@@ -8,6 +8,7 @@ export default function CarouselGallery({ images, layouts }) {
   const modalRef = useRef<HTMLDialogElement>(null);
 
   const openModal = (imgId: string) => {
+    console.log(imgId);
     modalRef.current?.showModal();
     // Use the native scrollIntoView to jump to the clicked image in the carousel
     document
@@ -60,16 +61,20 @@ export default function CarouselGallery({ images, layouts }) {
       </div>
       {/* 2. Zoom Modal with Carousel */}
       <dialog ref={modalRef} className="modal">
-        <div className=" max-w-5xl p-0 bg-transparent overflow-visible">
+        <div className=" max-w-5xl p-0 bg-transparen overflow-visible">
           {/* Close Icon */}
           <form method="dialog">
-            <button className="btn btn-sm btn-circle absolute right-4 top-4 z-50">
+            <button className="bg-white btn btn-sm btn-circle absolute right-4 top-4 z-50">
               ✕
             </button>
           </form>
 
           {/* daisyUI Carousel */}
-          <div className="carousel w-full rounded-box shadow-2xl">
+          <p className="text-center text-white mt-4 text-sm">
+            Swipe or scroll to browse
+          </p>
+
+          <div className="carousel w-full  shadow-2xl">
             {images.map((img, id) => (
               <div
                 key={id}
@@ -77,22 +82,18 @@ export default function CarouselGallery({ images, layouts }) {
                 className="carousel-item relative w-full"
               >
                 {/* Clicking image closes the modal */}
-                <form method="dialog" className="w-full">
+                <form method="dialog" className="w-full h-fit">
                   <button className="w-full p-0 border-none bg-transparent cursor-zoom-out block">
-                    <img src={img} className="w-full" alt={img} />
+                    <img src={img} className="w-full " alt={img} />
                   </button>
                 </form>
               </div>
             ))}
           </div>
-
-          <p className="text-center text-white mt-4 text-sm">
-            Swipe or scroll to browse
-          </p>
         </div>
 
         {/* Backdrop to close on click outside */}
-        <form method="dialog" className="modal-backdrop bg-black/80">
+        <form method="dialog" className="modal-backdrop">
           <button>close</button>
         </form>
       </dialog>

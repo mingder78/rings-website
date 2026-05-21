@@ -1,6 +1,11 @@
 import ImageLinksComponent from "@/components/ImageLinks";
 import CarouselGallery from "@/components/CarouselGallery";
-import { writingBodyImages, writingBodyImages2 } from "../constances";
+import {
+  writingBodyImages,
+  writingBodyImages2,
+  writingBodyLayouts,
+  writingBodyLayouts2,
+} from "../constances";
 
 export default function RingsPage() {
   return (
@@ -145,7 +150,10 @@ export default function RingsPage() {
             </div>
           </div>
 
-          <CarouselGallery images={writingBodyImages} />
+          <CarouselGallery
+            images={writingBodyImages}
+            layouts={writingBodyLayouts}
+          />
 
           <div
             className="ytp-cued-thumbnail-overlay-image"
@@ -176,7 +184,10 @@ export default function RingsPage() {
             書寫身體 過程筆記 & 研究錄像
           </p>
 
-          <CarouselGallery images={writingBodyImages2} />
+          <CarouselGallery
+            images={writingBodyImages2}
+            layouts={writingBodyLayouts2}
+          />
 
           <div className="w-full aspect-video">
             <iframe

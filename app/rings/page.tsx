@@ -1,6 +1,6 @@
 import ImageLinksComponent from "@/components/ImageLinks";
 import CarouselGallery from "@/components/CarouselGallery";
-import { ringsImages } from "../constances";
+import { ringsImages, ringsLayouts } from "../constances";
 
 export default function RingsPage() {
   return (
@@ -107,7 +107,7 @@ export default function RingsPage() {
               </div>
             </div>
 
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4 ">
+            <div className="col-span-1 row-span-1 bg-blue-0  ">
               {/* Item 6 */}
               <div>
                 {" "}
@@ -124,7 +124,7 @@ export default function RingsPage() {
               </div>
             </div>
 
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4  content-end">
+            <div className="col-span-1 row-span-1 bg-blue-0   content-end">
               {/* Item 5 */}
               <div>
                 {" "}
@@ -138,7 +138,7 @@ export default function RingsPage() {
               </div>
             </div>
 
-            <div className="col-span-1 row-span-1 bg-blue-0 p-4 ">
+            <div className="col-span-1 row-span-1 bg-blue-0  ">
               {/* Item 6 */}
               <div>
                 {" "}
@@ -217,7 +217,8 @@ export default function RingsPage() {
             allowFullScreen
           />
         </div>
-        <p>
+        <hr></hr>
+        <p className="text-center text-foreground p-10">
           More information at{" "}
           <a
             href="http://www.tentrotterdam.nl/artikelen/amara-van-der-elst-alfabetsoep/"
@@ -228,7 +229,7 @@ export default function RingsPage() {
             www.tentrotterdam.nl/artikelen/amara-van-der-elst-alfabetsoep/
           </a>
         </p>
-        <CarouselGallery images={ringsImages} />
+        <CarouselGallery images={ringsImages} layouts={ringsLayouts} />
 
         {/* Footer */}
         <ImageLinksComponent />

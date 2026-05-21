@@ -158,6 +158,16 @@ export const huaiImages: ImageData[] = [
   "Screen-Shot-2020-03-20-at-11.21.10-AM.png",
   "Screen-Shot-2020-03-20-at-11.21.10-AM.png",
 ];
+export const seedingLayouts = [
+  "1fr 1fr",
+  "2fr 3fr",
+  "3fr 2fr",
+  "1fr",
+  "1fr",
+  "3fr 2fr",
+  "1fr",
+  "1fr",
+];
 
 export const seedingImages: ImageData[] = [
   "PXL_20210910_173418394.jpg",
@@ -173,6 +183,8 @@ export const seedingImages: ImageData[] = [
   "246898587_10157865498871486_8487943744716560508_n.jpg",
 ];
 
+export const ringsLayouts = ["1fr", "1fr", "1fr", "1fr", "1fr"];
+
 export const ringsImages: ImageData[] = [
   "Zi-Xian_Szu-Yi-Wang_GNKK.jpg",
   "Screen-Shot-2021-01-23-at-1.56.50-PM.png",
@@ -181,11 +193,22 @@ export const ringsImages: ImageData[] = [
   "Screen-Shot-2021-01-23-at-2.11.53-PM.png",
 ];
 
+export const writingBodyLayouts = ["1fr", "1fr", "1fr 1fr"];
+
 export const writingBodyImages: ImageData[] = [
   "IMG_6227-copy.jpeg",
   "IMG_6227.jpg",
   "Screenshot-2025-12-30-at-16.55.40.png",
   "Screenshot-2025-12-30-at-16.56.25.png",
+];
+
+export const writingBodyLayouts2 = [
+  "2fr 3fr",
+  "3fr 2fr",
+  "1fr",
+  "3fr 2fr",
+  "1fr",
+  "1fr",
 ];
 
 export const writingBodyImages2: ImageData[] = [

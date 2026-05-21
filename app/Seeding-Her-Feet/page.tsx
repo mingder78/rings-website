@@ -1,6 +1,6 @@
 import ImageLinksComponent from "@/components/ImageLinks";
 import CarouselGallery from "@/components/CarouselGallery";
-import { seedingImages } from "../constances";
+import { seedingImages, seedingLayouts } from "../constances";
 
 export default function RingsPage() {
   return (
@@ -198,7 +198,7 @@ export default function RingsPage() {
             </div>
           </div>
           <hr></hr>
-          <CarouselGallery images={seedingImages} />
+          <CarouselGallery images={seedingImages} layouts={seedingLayouts} />
           <hr></hr>
           {/* Footer */}
           <ImageLinksComponent />
