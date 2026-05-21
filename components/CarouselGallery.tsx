@@ -8,7 +8,6 @@ export default function CarouselGallery({ images, layouts }) {
   const modalRef = useRef<HTMLDialogElement>(null);
 
   const openModal = (imgId: string) => {
-    console.log(imgId);
     modalRef.current?.showModal();
     // Use the native scrollIntoView to jump to the clicked image in the carousel
     document
@@ -32,7 +31,7 @@ export default function CarouselGallery({ images, layouts }) {
           return (
             <div
               key={rowIndex}
-              className="grid gap-20 box box2"
+              className="grid gap-20 "
               style={{
                 gridTemplateColumns: columns,
               }}
@@ -45,9 +44,9 @@ export default function CarouselGallery({ images, layouts }) {
                     alt=""
                     className="
                         w-full
-                        h-[220px]
-                        md:h-[320px]
-                        object-cover
+                        h-full
+                        md:h-full
+                        object-contain
                         transition-transform
                         duration-500
                         hover:scale-105
@@ -179,7 +178,7 @@ export default function CarouselGallery({ images, layouts }) {
            Small screen
         ========================= */
         @media (max-width: 640px) {
-        .grid {
+          .grid {
             grid-template-columns: 1fr !important;
           }
           .gallery-wrapper {

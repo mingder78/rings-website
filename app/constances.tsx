@@ -186,7 +186,7 @@ export const writingBodyImages2: ImageData[] = [
 
 export const youHouseLayouts = [
   "1fr",
-  "2fr 1fr",
+  "3fr 2fr",
   "1fr",
   "1fr",
   "1fr 1fr",
