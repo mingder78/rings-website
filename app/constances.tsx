@@ -183,6 +183,19 @@ export const seedingImages: ImageData[] = [
   "246898587_10157865498871486_8487943744716560508_n.jpg",
 ];
 
+export const shanLayouts = ["1fr", "2fr 1fr", "1fr", "1fr", "2fr 1fr", "1fr"];
+
+export const shanImages: ImageData[] = [
+  "IMG_6752a.jpg",
+  "IMG_6779.JPG",
+  "IMG_6784.JPG",
+  "IMG_6780.JPG",
+  "IMG_6765.JPG",
+  "IMG_6757.JPG",
+  "IMG_6762.JPG",
+  "IMG_6771.JPG",
+];
+
 export const foreshoreLayouts = [
   "1fr",
   "1fr",
