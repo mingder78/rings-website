@@ -237,13 +237,12 @@ export default function RingsPage() {
               allowFullScreen
             />
           </div>
+          <p className="text-xs text-muted-foreground pt-12 border-t border-border"></p>
           <CarouselGallery
             images={foreshoreImages}
             layouts={foreshoreLayouts}
           />
-          <p className="text-xs text-muted-foreground pt-12 border-t border-border">
-            <hr />
-          </p>
+          <p className="text-xs text-muted-foreground pt-12 border-t border-border"></p>
           {/* Footer */}
           <ImageLinksComponent />
           <footer className="text-xs text-muted-foreground pt-12 border-t border-border">
