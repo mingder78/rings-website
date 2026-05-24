@@ -183,6 +183,29 @@ export const seedingImages: ImageData[] = [
   "246898587_10157865498871486_8487943744716560508_n.jpg",
 ];
 
+export const foreshoreLayouts = [
+  "1fr",
+  "1fr",
+  "1fr",
+  "2fr 1fr",
+  "1fr",
+  "1fr",
+  "1fr",
+  "1fr",
+];
+
+export const foreshoreImages: ImageData[] = [
+  "Screen-Shot-2020-05-14-at-4.59.22-PM.png",
+  "Screen-Shot-2020-04-16-at-5.32.35-PM.png",
+  "Screen-Shot-2020-04-16-at-5.33.00-PM.png",
+  "Screen-Shot-2020-05-14-at-4.58.43-PM.png",
+  "Screen-Shot-2020-05-14-at-4.56.37-PM.png",
+  "IMG_4956.JPG",
+  "Screen-Shot-2020-04-23-at-5.39.44-PM.png",
+  "IMG_5007.JPG",
+  "IMG_4820.JPG",
+];
+
 export const ringsLayouts = ["1fr", "1fr", "1fr", "1fr", "1fr"];
 
 export const ringsImages: ImageData[] = [

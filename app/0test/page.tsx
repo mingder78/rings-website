@@ -12,6 +12,12 @@ const Page = () => {
             WANG, 王 SZU-YI 思 懿
           </a>
         </p>
+
+        <p className="text-xs text-muted-foreground pt-12 border-t border-border">
+          <hr />
+        </p>
+        {/* Footer */}
+
         <div
           className="ytp-cued-thumbnail-overlay-image"
           style={{
