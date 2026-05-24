@@ -193,6 +193,25 @@ export const ringsImages: ImageData[] = [
   "Screen-Shot-2021-01-23-at-2.11.53-PM.png",
 ];
 
+export const ZiLayouts = ["1fr"];
+
+export const ZiImages: ImageData[] = [
+  "Screen-Shot-2021-07-21-at-12.58.04-AM.png",
+];
+
+export const ZiLayouts2 = ["2fr 3fr", "1fr 1fr", "1fr 1fr", "2fr 1fr"];
+
+export const ZiImages2: ImageData[] = [
+  "PXL_20210417_124644582.jpg",
+  "PXL_20210415_172701758.jpg",
+  "PXL_20210415_1548419482.jpg",
+  "PXL_20210415_161843617.jpg",
+  "PXL_20210415_173822678.jpg",
+  "PXL_20210415_154959999.jpg",
+  "PXL_20210415_173227186.jpg",
+  "PXL_20210415_161841914.jpg",
+];
+
 export const writingBodyLayouts = ["1fr", "1fr", "1fr 1fr"];
 
 export const writingBodyImages: ImageData[] = [
@@ -234,6 +253,7 @@ export const youHouseLayouts = [
   "1fr",
   "1fr 1fr",
   "1fr 1fr 1fr 1fr",
+  "1fr",
   "1fr",
 ];
 

@@ -12,6 +12,61 @@ const Page = () => {
             WANG, 王 SZU-YI 思 懿
           </a>
         </p>
+        <div
+          className="ytp-cued-thumbnail-overlay-image"
+          style={{
+            backgroundImage:
+              'url("https://i.ytimg.com/vi/ryPogQsYzKY/maxresdefault.jpg")',
+          }}
+        />
+        <div
+          style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}
+        >
+          <iframe
+            src="https://www.youtube.com/embed/uIal9Dqe3c4?si=XQpbfWr9N5Jx70yN"
+            title="YouTube video player"
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+            }}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
+        <p className="text-muted-foreground italic">
+          書寫身體 過程筆記 & 研究錄像
+        </p>
+
+        <div className="w-full aspect-video">
+          <iframe
+            src="https://player.vimeo.com/video/1150630068"
+            className="w-full h-full rounded-xl"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+
+        <div className="w-full aspect-video">
+          <iframe
+            src="https://player.vimeo.com/video/1150640244"
+            className="w-full h-full rounded-xl"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+
+        <div>
+          <br />
+          <i>
+            本研究由台灣國藝會 贊助
+            <br />
+            荷蘭 iii Den Haag, PANT 台荷藝集 協力
+          </i>
+        </div>
       </main>
     </div>
   );
