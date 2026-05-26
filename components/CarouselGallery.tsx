@@ -32,20 +32,22 @@ export default function CarouselGallery({ images, layouts }) {
           return (
             <div
               key={rowIndex}
-              className="grid gap-20 "
+              className="grid gap-20"
               style={{
                 gridTemplateColumns: columns,
               }}
               onClick={() => openModal(`${rowIndex}`)}
             >
               {rowImages.map((img, index) => (
-                <div key={index} className="overflow-hidden">
+                <div
+                  key={index}
+                  className="flex items-center justify-center overflow-hidden"
+                >
                   <img
                     src={img}
                     alt=""
                     className="
-                        w-full
-                        h-full
+                    max-w-[60vw] max-h-[75vh] w-auto h-auto block
                         md:h-full
                         object-contain
                         transition-transform
