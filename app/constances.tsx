@@ -183,6 +183,26 @@ export const seedingImages: ImageData[] = [
   "246898587_10157865498871486_8487943744716560508_n.jpg",
 ];
 
+export const ritualLayouts = [
+  "1fr",
+  "2fr 1fr",
+  "1fr 1fr",
+  "2fr 1fr",
+  "1fr 2fr",
+];
+
+export const ritualImages: ImageData[] = [
+  "IMG_7032.JPG",
+  "IMG_7028.JPG",
+  "IMG_7036.JPG",
+  "IMG_7025.JPG",
+  "IMG_7031.JPG",
+  "IMG_7030.JPG",
+  "IMG_7035.JPG",
+  "IMG_7016.JPG",
+  "IMG_7019.JPG",
+];
+
 export const shanLayouts = ["1fr", "2fr 1fr", "1fr", "1fr", "2fr 1fr", "1fr"];
 
 export const shanImages: ImageData[] = [
