@@ -24,11 +24,11 @@ export default function SidebarLayout() {
           `}
       </style>
 
-      <div className="fixed left-0 top-0 h-full w-64 text-gray-500 z-40">
+      <div className="fixed left-0 top-0 h-full w-auto text-gray-500 z-40">
         {/* Mobile Menu Button */}
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
-          className="fixed top-3 right-3 z-50 md:hidden text-gray-800 hover:text-gray-900 transition-colors"
+          className="fixed top-3 right-3 z-50 md:hidden text-gray-900 hover:text-gray-950 transition-colors"
           aria-label="Toggle menu"
         >
           {sidebarOpen ? (
@@ -41,7 +41,7 @@ export default function SidebarLayout() {
         {/* Mobile Overlay */}
         {sidebarOpen && (
           <div
-            className="fixed inset-0 bg-black/20 z-30 md:hidden bg-yellow-100"
+            className="fixed inset-0 bg-black/20 z-30 md:hidden bg-yellow-100 opacity-90"
             onClick={() => setSidebarOpen(false)}
           />
         )}

@@ -74,7 +74,7 @@ export default function CarouselGallery({ images, layouts }) {
 
           {/* daisyUI Carousel */}
           <p className="text-center text-white mt-4 text-sm">
-            Swipe or scroll to browse
+            Swipe or scroll to browse images.
           </p>
 
           <div className="carousel w-full  shadow-2xl">
