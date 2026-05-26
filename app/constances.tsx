@@ -183,6 +183,50 @@ export const seedingImages: ImageData[] = [
   "246898587_10157865498871486_8487943744716560508_n.jpg",
 ];
 
+export const ziLayouts = ["3fr 2fr", "2fr 3fr"];
+
+export const ziImages: ImageData[] = [
+  "59163455_10156027972031128_1840972735690309632_o.jpg",
+  "58745031_10156027972316128_9114538901308964864_o.jpg",
+  "58864861_10156027972086128_9180532289287749632_o.jpg",
+  "59449239_10156027972261128_1811656409914277888_o.jpg",
+];
+
+export const ziLayouts2 = [
+  "1fr",
+  "1fr 1fr",
+  "1fr 1fr",
+  "1fr",
+  "2fr 3fr",
+  "3fr 2fr",
+  "1fr",
+];
+
+export const ziImages2: ImageData[] = [
+  "IMG_9328_bbg.jpg",
+  "IMG_1753f.jpg",
+  "west_limestone-s-01.jpg",
+  "west_limestone-s-03f.jpg",
+  "west_limestone-s-02.jpg",
+  "corridoor-03_rgb.jpg",
+  "IMG_6510.jpg",
+  "IMG_6531.jpg",
+  "IMG_6562_bbg.jpg",
+  "IMG_6508.jpg",
+  "IMG_6514.jpg",
+];
+
+export const ziLayouts3 = ["3fr 2fr 1fr", "2fr 2fr 1fr"];
+
+export const ziImages3: ImageData[] = [
+  "xian_evolution_wb.jpg",
+  "IMG_1741a.jpg",
+  "IMG_6465f.jpg",
+  "IMG_6454.JPG",
+  "IMG_6486.jpg",
+  "IMG_6412.jpg",
+];
+
 export const extLayouts = ["1fr", "2fr 1fr", "1fr", "3fr 1fr", "1fr"];
 
 export const extImages: ImageData[] = [
