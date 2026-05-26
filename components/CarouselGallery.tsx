@@ -18,7 +18,7 @@ export default function CarouselGallery({ images, layouts }) {
 
   return (
     <div className="gallery-wrapper">
-      <div className="space-y-20">
+      <div className="space-y-5">
         {layouts.map((columns, rowIndex) => {
           // count columns in current row
           const count = columns.split(" ").length;
@@ -32,7 +32,7 @@ export default function CarouselGallery({ images, layouts }) {
           return (
             <div
               key={rowIndex}
-              className="grid gap-20"
+              className="grid gap-5"
               style={{
                 gridTemplateColumns: columns,
               }}
@@ -41,14 +41,15 @@ export default function CarouselGallery({ images, layouts }) {
               {rowImages.map((img, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-center overflow-hidden"
+                  className="sm:max-h-[60vh] w-auto  flex items-center justify-center overflow-hidden"
                 >
                   <img
                     src={img}
                     alt=""
                     className="
-                    max-w-[60vw] max-h-[75vh] w-auto h-auto block
-                        md:h-full
+                        w-auto
+                        h-auto
+                        sm:h-full
                         object-contain
                         transition-transform
                         duration-500
