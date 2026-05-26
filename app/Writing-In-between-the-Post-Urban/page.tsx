@@ -129,6 +129,8 @@ export default function RingsPage() {
                 </section>
                 <section className="text-sm text-muted-foreground space-y-1">
                   <p>
+                    <br />
+                    <br />
                     Below are images of the research in progress & some first
                     phase miniatures.
                   </p>
@@ -151,7 +153,9 @@ export default function RingsPage() {
           {/* Title Section */}
           <p className="text-xs text-muted-foreground pt-12 border-t border-border"></p>
           <CarouselGallery images={writingImages} layouts={writingLayouts} />
-          <p>(images above) research site #1: kleinpolderplein, Rotterdam</p>
+          <p className="text-center">
+            (images above) research site #1: kleinpolderplein, Rotterdam
+          </p>
           <p className="text-xs text-muted-foreground pt-12 border-t border-border"></p>
           {/* Footer */}
           <ImageLinksComponent />

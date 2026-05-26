@@ -183,6 +183,18 @@ export const seedingImages: ImageData[] = [
   "246898587_10157865498871486_8487943744716560508_n.jpg",
 ];
 
+export const extLayouts = ["1fr", "2fr 1fr", "1fr", "3fr 1fr", "1fr"];
+
+export const extImages: ImageData[] = [
+  "IMG_4594xx.jpg",
+  "IMG_4669.jpg",
+  "IMG_4556.jpg",
+  "IMG_4609.jpg",
+  "IMG_4626.jpg",
+  "aa.jpg",
+  "IMG_4567xx.jpg",
+];
+
 export const writingLayouts = ["1fr", "1fr 1fr 1fr", "3fr 1fr", "1fr"];
 
 export const writingImages: ImageData[] = [
