@@ -3,6 +3,27 @@
 import { useState, useRef } from "react";
 import { type ImageData } from "../app/constances";
 
+function Img({ src, alt }: { src: string; alt: string }) {
+  const [isPortrait, setIsPortrait] = useState(false);
+
+  return (
+    <img
+      src={src}
+      alt={alt}
+      onLoad={(e) => {
+        const img = e.currentTarget;
+        console.log(img);
+        setIsPortrait(img.naturalHeight > img.naturalWidth);
+      }}
+      className={
+        isPortrait
+          ? "max-h-[50vh] w-auto object-contain"
+          : "max-w-[50vw] h-auto object-contain"
+      }
+    />
+  );
+}
+
 export default function CarouselGallery({ images, layouts }) {
   let imageIndex = 0;
   const modalRef = useRef<HTMLDialogElement>(null);
@@ -41,21 +62,9 @@ export default function CarouselGallery({ images, layouts }) {
               {rowImages.map((img, index) => (
                 <div
                   key={index}
-                  className="sm:max-h-[60vh] w-auto  flex items-center justify-center overflow-hidden"
+                  className=" w-auto  flex items-center justify-center overflow-hidden"
                 >
-                  <img
-                    src={img}
-                    alt=""
-                    className="
-                        w-auto
-                        h-auto
-                        sm:h-full
-                        object-contain
-                        transition-transform
-                        duration-500
-                        hover:scale-105
-                      "
-                  />
+                  <Img src={img} alt="" />
                 </div>
               ))}
             </div>
@@ -87,7 +96,7 @@ export default function CarouselGallery({ images, layouts }) {
                 {/* Clicking image closes the modal */}
                 <form method="dialog" className="w-full h-fit">
                   <button className="w-full p-0 border-none bg-transparent cursor-zoom-out block">
-                    <img src={img} className="w-full " alt={img} />
+                    <img src={img} alt={img} className="h-full w-auto" />
                   </button>
                 </form>
               </div>

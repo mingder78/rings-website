@@ -128,13 +128,10 @@ export const otherSections = [
 
 export const narrativeLayouts = [
   "1fr",
-  "1fr",
-  "1fr",
-  "1fr",
-  "1fr",
   "2fr 1fr",
   "1fr",
-  "1fr",
+  "2fr 1fr 1fr",
+  "1fr 1fr",
   "1fr",
 ];
 
