@@ -65,6 +65,23 @@ const Page = () => {
           />
         </div>
 
+        <div
+          className="
+          grid
+          grid-cols-1
+          md:grid-cols-[1fr_3fr_1fr]
+          w-full
+        "
+        >
+          {/* hidden on mobile */}
+          <div className="hidden md:block"></div>
+
+          <img src="image.jpg" alt="" className="w-full h-auto block" />
+
+          {/* hidden on mobile */}
+          <div className="hidden md:block"></div>
+        </div>
+
         <div>
           <br />
           <i>

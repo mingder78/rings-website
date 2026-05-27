@@ -126,6 +126,31 @@ export const otherSections = [
   ["cv", "/cv"],
 ];
 
+export const stageLayouts = [
+  "1fr 1fr",
+  "1fr 1fr",
+  "1fr",
+  "1fr",
+  "4fr 3fr 3fr",
+  "1fr 1fr",
+  "1fr",
+];
+
+export const stageImages: ImageData[] = [
+  "stage-after_imgpeople-01.jpg",
+  "drawing.jpg",
+  "IMG_6162a.jpg",
+  "Screen-Shot-2018-07-31-at-9.50.47-PM.png",
+  "stage-after_imggroup-01.jpg",
+  "thestageafteranaly_all.jpg",
+  "IMG_6230.JPG",
+  "IMG_6226.JPG",
+  "black4.jpg",
+  "stage-after_imggroup-04.jpg",
+  "stage-after_imggroup-02.jpg",
+  "stage-after_imggroup-05.jpg",
+];
+
 export const huaiLayouts = [
   "1fr",
   "1fr",
