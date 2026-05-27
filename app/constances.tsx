@@ -127,25 +127,24 @@ export const otherSections = [
 ];
 
 export const movingLayouts = [
-  "1fr 1fr",
-  "1fr 1fr",
   "1fr",
   "1fr",
-  "4fr 3fr 3fr",
-  "1fr 1fr",
+  "1fr",
+  "1fr",
+  "1fr",
+  "2fr 1fr",
   "1fr",
 ];
 
 export const movingImages: ImageData[] = [
-  "stage-after_imgpeople-01.jpg",
-  "stage-after_imgpeople-01.jpg",
-  "stage-after_imgpeople-01.jpg",
-  "stage-after_imgpeople-01.jpg",
-  "stage-after_imgpeople-01.jpg",
-  "stage-after_imgpeople-01.jpg",
-  "stage-after_imgpeople-01.jpg",
-  "stage-after_imgpeople-01.jpg",
-  "stage-after_imgpeople-01.jpg",
+  "Screen-Shot-2019-01-24-at-1.49.13-AM.png",
+  "IMG_6178.JPG",
+  "IMG_6183.JPG",
+  "IMG_6184.JPG",
+  "IMG_6194.JPG",
+  "IMG_6206.JPG",
+  "IMG_6202.JPG",
+  "IMG_6207.JPG",
 ];
 
 export const stageLayouts = [
