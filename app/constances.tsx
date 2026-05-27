@@ -126,6 +126,31 @@ export const otherSections = [
   ["cv", "/cv"],
 ];
 
+export const narrativeLayouts = [
+  "1fr",
+  "1fr",
+  "1fr",
+  "1fr",
+  "1fr",
+  "2fr 1fr",
+  "1fr",
+  "1fr",
+  "1fr",
+];
+
+export const narrativeImages: ImageData[] = [
+  "a2-venue-10.jpg",
+  "a2mapp-09.png",
+  "a2-08.png",
+  "a2-full-10.jpg",
+  "poster-02.png",
+  "poster-03.png",
+  "poster-04.png",
+  "compass_mid-0629-18.png",
+  "compass_mid-0629-14.png",
+  "compass_mid-0629-15.png",
+];
+
 export const movingLayouts = [
   "1fr",
   "1fr",
