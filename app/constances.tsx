@@ -126,6 +126,28 @@ export const otherSections = [
   ["cv", "/cv"],
 ];
 
+export const movingLayouts = [
+  "1fr 1fr",
+  "1fr 1fr",
+  "1fr",
+  "1fr",
+  "4fr 3fr 3fr",
+  "1fr 1fr",
+  "1fr",
+];
+
+export const movingImages: ImageData[] = [
+  "stage-after_imgpeople-01.jpg",
+  "stage-after_imgpeople-01.jpg",
+  "stage-after_imgpeople-01.jpg",
+  "stage-after_imgpeople-01.jpg",
+  "stage-after_imgpeople-01.jpg",
+  "stage-after_imgpeople-01.jpg",
+  "stage-after_imgpeople-01.jpg",
+  "stage-after_imgpeople-01.jpg",
+  "stage-after_imgpeople-01.jpg",
+];
+
 export const stageLayouts = [
   "1fr 1fr",
   "1fr 1fr",
