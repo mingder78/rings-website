@@ -17,8 +17,8 @@ function Img({ src, alt }: { src: string; alt: string }) {
       }}
       className={
         isPortrait
-          ? "max-h-[50vh] w-auto object-contain"
-          : "max-w-[50vw] h-auto object-contain"
+          ? "sm:max-h-[50vh] w-auto object-contain"
+          : "sm:max-w-[50vw] h-auto object-contain"
       }
     />
   );
@@ -62,7 +62,7 @@ export default function CarouselGallery({ images, layouts }) {
               {rowImages.map((img, index) => (
                 <div
                   key={index}
-                  className=" w-auto  flex items-center justify-center overflow-hidden"
+                  className=" w-auto flex items-center justify-center overflow-hidden"
                 >
                   <Img src={img} alt="" />
                 </div>
