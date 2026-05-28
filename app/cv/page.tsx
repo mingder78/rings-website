@@ -1,7 +1,7 @@
 // app/about/page.tsx
 export default function AboutPage() {
   return (
-    <div className="flex min-h-screen bg-background text-foreground">
+    <div className="font-ebgaramond flex min-h-screen bg-background text-muted-foreground">
       {/* Main Content */}
       <main className="flex-1 px-4 sm:px-6 md:px-12">
         <div className="mx-auto px-4 sm:px-6 md:px-12 py-12 space-y-12">
@@ -9,6 +9,8 @@ export default function AboutPage() {
             <br />
             <div grid-row="" grid-pad="8" grid-gutter="16" grid-responsive="">
               <div grid-col="x12" grid-pad="8">
+                <br />
+                <br />
                 Szu-Yi Wang&nbsp; <br />
                 王 思 懿 <br />
                 <br />

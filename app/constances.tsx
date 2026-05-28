@@ -156,7 +156,6 @@ export const otherSections = [
   ["Film", "/Film"],
   ["Photo galleries", "/Photo-gallerie"],
   ["Visual music", "/Visual-music"],
-  ["News", "/News"],
   ["Information", "/Information"],
   ["cv", "/cv"],
 ];
