@@ -117,6 +117,29 @@ export const works = [
   ["Meet the Mountains", "/Meet-the-Mountains"],
 ];
 
+export const photoLayouts = [
+  "1fr 1fr 1fr 1fr",
+  "1fr 1fr 1fr 1fr",
+  "1fr 1fr 1fr 1fr",
+  "1fr 1fr 1fr 1fr",
+  "1fr 1fr 1fr 1fr",
+  "1fr 1fr 1fr 1fr",
+  "1fr 1fr 1fr 1fr",
+  "1fr 1fr 1fr 1fr",
+  "1fr 1fr 1fr 1fr",
+];
+
+export const photoImages: ImageData[] = [
+  "79320007.JPG",
+  "79300013.JPG",
+  "79320007.JPG",
+  "79320007.JPG",
+  "79320007.JPG",
+  "79320007.JPG",
+  "79320007.JPG",
+  "79320007.JPG",
+];
+
 export const otherSections = [
   ["Film", "/Film"],
   ["Photo galleries", "/Photo-gallerie"],
