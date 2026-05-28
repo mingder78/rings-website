@@ -126,6 +126,31 @@ export const otherSections = [
   ["cv", "/cv"],
 ];
 
+export const unLayouts = [
+  "1fr",
+  "1fr 1fr",
+  "1fr",
+  "2fr 1fr",
+  "2fr 1fr 3fr",
+  "2fr 1fr",
+  "1fr",
+];
+
+export const unImages: ImageData[] = [
+  "DSC07413.JPG",
+  "011514.jpg",
+  "orga.jpg",
+  "IMG_8169.JPG",
+  "IMG_8174.JPG",
+  "IMG_8173.JPG",
+  "Screen-Shot-2014-01-22-at-6.48.35-AM.png.jpg",
+  "Screen-Shot-2014-01-22-at-6.48.27-AM.png.jpg",
+  "Screen-Shot-2014-01-22-at-6.48.43-AM.png.jpg",
+  "IMG_4095.jpg",
+  "IMG_2337.JPG",
+  "DSC07415.JPG",
+];
+
 export const shiningLayouts = [
   "1fr",
   "1fr",
