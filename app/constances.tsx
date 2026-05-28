@@ -126,6 +126,19 @@ export const otherSections = [
   ["cv", "/cv"],
 ];
 
+export const hanziLayouts = ["2fr 1fr", "1fr", "1fr", "3fr 2fr", "2fr 3fr"];
+
+export const hanziImages: ImageData[] = [
+  "IMG_1703.jpg",
+  "IMG_1711t.png",
+  "IMG_1706.JPG",
+  "IMG_1707.JPG",
+  "IMG_1708.JPG",
+  "IMG_1739.JPG",
+  "IMG_1704good.JPG",
+  "IMG_1775.JPG",
+];
+
 export const roomLayouts = [
   "1fr",
   "1fr 1fr",
@@ -134,8 +147,6 @@ export const roomLayouts = [
   "1fr",
   "2fr 1fr",
   "1fr 2fr",
-  "3fr 1fr 2fr",
-  "1fr",
 ];
 
 export const roomImages: ImageData[] = [
