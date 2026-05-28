@@ -126,6 +126,39 @@ export const otherSections = [
   ["cv", "/cv"],
 ];
 
+export const waterLayouts = [
+  "2fr 1fr",
+  "1fr",
+  "1fr 2fr",
+  "1fr",
+  "1fr 1fr",
+  "1fr",
+  "2fr 3fr",
+  "1fr 1fr",
+  "3fr 1fr 2fr",
+  "1fr",
+];
+
+export const waterImages: ImageData[] = [
+  "000023.jpg",
+  "googleview.png",
+  "second22-02.png",
+  "site0516_reflectiononly.png",
+  "matrix.png",
+  "three.jpg",
+  "mtjade_s.jpg",
+  "galaxy2_s.jpg",
+  "shanshui_sa.jpg",
+  "DSC01681a.jpg",
+  "Szu-Yi10a.jpg",
+  "aa-1.jpg",
+  "IMG_1247.JPG",
+  "10a.jpg",
+  "IMG_1161da.jpg",
+  "14a.jpg",
+  "IMG_1100.JPG",
+];
+
 export const narrativeLayouts = [
   "1fr",
   "2fr 1fr",
