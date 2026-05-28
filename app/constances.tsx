@@ -126,6 +126,26 @@ export const otherSections = [
   ["cv", "/cv"],
 ];
 
+export const shiningLayouts = [
+  "1fr",
+  "1fr",
+  "1fr",
+  "2fr 3fr",
+  "3fr 2fr",
+  "1fr",
+];
+
+export const shiningImages: ImageData[] = [
+  "IMG_6054aa.jpg",
+  "collage.png",
+  "Screen-Shot-2018-10-03-at-4.59.57-PM.png",
+  "IMG_6023a.jpg",
+  "IMG_5871.JPG",
+  "IMG_6019a.jpg",
+  "IMG_6100.JPG",
+  "Screen-Shot-2018-10-03-at-4.58.37-PM.png",
+];
+
 export const hanziLayouts = ["2fr 1fr", "1fr", "1fr", "3fr 2fr", "2fr 3fr"];
 
 export const hanziImages: ImageData[] = [
