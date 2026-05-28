@@ -126,6 +126,31 @@ export const otherSections = [
   ["cv", "/cv"],
 ];
 
+export const meetLayouts = [
+  "1fr 2fr",
+  "2fr 1fr",
+  "1fr 2fr",
+  "1fr",
+  "1fr",
+  "1fr 1fr",
+  "1fr 2fr",
+];
+
+export const meetImages: ImageData[] = [
+  "25050014.JPG",
+  "25050012.JPG",
+  "_MG_7653s.jpg",
+  "pinga_b.jpg",
+  "IMG_8629_s.jpg",
+  "_MG_7777s.jpg",
+  "_MG_7730s.jpg",
+  "_MG_7854s.jpg",
+  "_MG_7858s.jpg",
+  "_MG_7913s.jpg",
+  "_MG_7884s.jpg",
+  "_MG_7964s.jpg",
+];
+
 export const unLayouts = [
   "1fr",
   "1fr 1fr",
