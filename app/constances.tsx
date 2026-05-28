@@ -126,6 +126,35 @@ export const otherSections = [
   ["cv", "/cv"],
 ];
 
+export const roomLayouts = [
+  "1fr",
+  "1fr 1fr",
+  "1fr",
+  "1fr",
+  "1fr",
+  "2fr 1fr",
+  "1fr 2fr",
+  "3fr 1fr 2fr",
+  "1fr",
+];
+
+export const roomImages: ImageData[] = [
+  "veil04718.png",
+  "kites00602.png",
+  "kites00418.png",
+  "kites01719.png",
+  "veil_pink01327.png",
+  "veil02104.png",
+  "surface05614.png",
+  "IMG_5385.JPG",
+  "veil03862.png",
+  "veil02829.png",
+  "15540670_1061438253978924_1375861920733325599_o.jpg",
+  "IMG_2910.JPG",
+  "received_10154058655346128a.jpg",
+  "IMG_5468.JPG",
+];
+
 export const waterLayouts = [
   "2fr 1fr",
   "1fr",
