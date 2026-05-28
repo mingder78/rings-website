@@ -18,13 +18,15 @@ export default function RingsPage() {
            sm:grid-cols-1 sm:gap-3
            md:grid-cols-1 md:gap-4
            lg:grid-cols-1 lg:gap-6
-
+           auto-rows-min
            "
           >
             <div className="bg-red-0 col-span-1 row-span-1">
               {/* Item 1 */}
               <div>
                 <p className="text-sm leading-relaxed space-y-2 text-blue-900">
+                  <br />
+                  <br />
                   a klaproos; a yellow stone / above the water; into the dunes
                   <br />
                   —selection 2016 - 2019
