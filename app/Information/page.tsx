@@ -1,6 +1,5 @@
 // app/about/page.tsx
 import SocialIcons from "@/components/SocialMediaIcons";
-import ImageLinksComponent from "@/components/ImageLinks";
 //
 export default function AboutPage() {
   return (
@@ -8,7 +7,7 @@ export default function AboutPage() {
       {/* Main Content */}
       <main className=" px-4 sm:px-6 md:px-12">
         <div className=" grid sm:grid-cols-[3fr_1fr] grid-cols-1">
-          <div className="bg-red-10 pl-1 md:pl-60 grid-cols-1">
+          <div className="bg-red-0 pl-1 md:pl-60 grid-cols-1">
             <br />
             <div grid-row="" grid-pad="8" grid-gutter="16" grid-responsive="">
               <div grid-col="x12" grid-pad="8">
@@ -111,13 +110,11 @@ export default function AboutPage() {
                 <br />
               </div>
             </div>
+            <div className="bg-blue-0 pl-1 p-10">
+              <img className="object-contain" src="portrait01a.jpg" alt="" />
+            </div>
           </div>
         </div>
-        {/* Footer */}
-        <ImageLinksComponent />
-        <footer className="text-xs text-muted-foreground pt-12 border-t border-border">
-          <p>©SZU-YI WANG. 2026</p>
-        </footer>
       </main>
     </div>
   );
