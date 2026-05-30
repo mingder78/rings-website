@@ -26,6 +26,7 @@ function Img({ src, alt }: { src: string; alt: string }) {
 
 export default function CarouselGallery({ images, layouts }) {
   let imageIndex = 0;
+  let count = 0;
   const modalRef = useRef<HTMLDialogElement>(null);
 
   const openModal = (imgId: string) => {
@@ -41,14 +42,14 @@ export default function CarouselGallery({ images, layouts }) {
     <div className="gallery-wrapper">
       <div className="space-y-5">
         {layouts.map((columns, rowIndex) => {
+          imageIndex += count;
           // count columns in current row
-          const count = columns.split(" ").length;
+          count = columns.split(" ").length;
 
           // get images for this row
-          const rowImages = images.slice(imageIndex, imageIndex + count);
+          let rowImages = images.slice(imageIndex, imageIndex + count);
 
           // move image pointer
-          imageIndex += count;
 
           return (
             <div
@@ -57,16 +58,19 @@ export default function CarouselGallery({ images, layouts }) {
               style={{
                 gridTemplateColumns: columns,
               }}
-              onClick={() => openModal(`${rowIndex}`)}
             >
-              {rowImages.map((img, index) => (
-                <div
-                  key={index}
-                  className=" w-auto flex items-center justify-center overflow-hidden"
-                >
-                  <Img src={img} alt="" />
-                </div>
-              ))}
+              {rowImages.map((img, index) => {
+                let currentIndex = index + imageIndex;
+                return (
+                  <div
+                    onClick={() => openModal(`${currentIndex}`)}
+                    key={currentIndex}
+                    className=" w-auto flex items-center justify-center overflow-hidden"
+                  >
+                    <Img src={img} alt="" />
+                  </div>
+                );
+              })}
             </div>
           );
         })}
