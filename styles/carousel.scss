@@ -1,0 +1,90 @@
+// src/components/carousel.module.scss
+
+$carousel-height: 450px;
+$transition-speed: 0.4s;
+$border-radius: 12px;
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: $border-radius;
+    box-shadow: 0 4px 12px rgba(245, 254, 0, 1);
+
+    .viewport {
+        width: 100%;
+        height: $carousel-height;
+        overflow: hidden;
+    }
+
+    .track {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: transform $transition-speed ease-in-out;
+    }
+
+    .slide {
+        flex: 0 0 100%;
+        width: 100%;
+        height: 100%;
+        position: relative; // Required for Next.js Image "fill" property
+
+        img {
+            object-fit: cover !important; // Forces Next.js image to clip and center safely
+            object-position: center;
+        }
+    }
+
+    .btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.7);
+        border: none;
+        font-size: 1.5rem;
+        padding: 0.75rem 1rem;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: background 0.2s;
+        z-index: 10;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        &.prev {
+            left: 1rem;
+        }
+        &.next {
+            right: 1rem;
+        }
+    }
+
+    .dots {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 0.5rem;
+        z-index: 10;
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition:
+                background 0.2s,
+                transform 0.2s;
+
+            &.active {
+                background: #fff;
+                transform: scale(1.2);
+            }
+        }
+    }
+}

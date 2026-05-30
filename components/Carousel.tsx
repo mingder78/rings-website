@@ -1,16 +1,32 @@
-// src/components/Carousel.jsx
+"use client";
+// src/components/Carousel.tsx
 import React, { useState } from "react";
 import "../styles/carousel.scss";
 
-export default function Carousel({ images }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+// Define the shape of each image object
+export interface CarouselImage {
+  src: string;
+  alt: string;
+}
 
-  const nextSlide = () => {
+// Define the component props
+interface CarouselProps {
+  images: CarouselImage[];
+}
+
+export default function Carousel({ images }: CarouselProps) {
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+
+  const nextSlide = (): void => {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
-  const prevSlide = () => {
+  const prevSlide = (): void => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  const goToSlide = (index: number): void => {
+    setCurrentIndex(index);
   };
 
   return (
@@ -51,7 +67,7 @@ export default function Carousel({ images }) {
           <button
             key={index}
             className={`carousel-dot ${index === currentIndex ? "active" : ""}`}
-            onClick={() => setCurrentIndex(index)}
+            onClick={() => goToSlide(index)}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
