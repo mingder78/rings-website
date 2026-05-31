@@ -12,29 +12,27 @@ export default function AutoCarousel() {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
+    const id = setInterval(() => {
+      setCurrent((v) => (v + 1) % images.length);
     }, 3000);
 
-    return () => clearInterval(timer);
+    return () => clearInterval(id);
   }, []);
 
   return (
-    <div className="carousel w-full rounded-box">
-      {images.map((src, index) => (
+    <div className="relative h-64 overflow-hidden rounded-box">
+      {images.map((src, i) => (
         <div
-          key={index}
-          className={`carousel-item w-full transition-all duration-500 ${
-            current === index ? "block" : "hidden"
-          }`}
+          key={i}
+          className={`
+            absolute inset-0
+            transition-all duration-1000 ease-in-out
+            ${current === i ? "opacity-100 scale-100" : "opacity-0 scale-110"}
+          `}
         >
-          <div className="card w-full bg-base-100 shadow-xl">
-            <figure>
-              <img
-                src={src}
-                alt={`slide-${index}`}
-                className="w-full h-64 object-cover"
-              />
+          <div className="card h-full bg-base-100 shadow-xl">
+            <figure className="h-full">
+              <img src={src} alt="" className="w-full h-full object-cover" />
             </figure>
           </div>
         </div>
