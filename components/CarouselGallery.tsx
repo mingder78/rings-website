@@ -90,19 +90,24 @@ export default function CarouselGallery({ images, layouts }) {
             Swipe or scroll to browse images.
           </p>
 
-          <div className="carousel w-full  shadow-2xl">
+          <div className="carousel w-full absolute top-0 left-0">
             {images.map((img, id) => (
               <div
                 key={id}
                 id={`slide-${id}`}
                 className="carousel-item relative w-full"
               >
-                {/* Clicking image closes the modal */}
-                <form method="dialog" className="w-full h-fit">
-                  <button className="w-full p-0 border-none bg-transparent cursor-zoom-out block">
-                    <img src={img} alt={img} className="h-full w-auto" />
-                  </button>
-                </form>
+                <div className="bg-base-content w-screen h-screen flex items-center justify-center">
+                  <div className="card bg-base-content shadow-2xl w-full h-full max-w-4xl max-h-[85vh] flex flex-col justify-center items-center p-4">
+                    <figure className="w-full h-full flex justify-center items-center overflow-hidden">
+                      <img
+                        src={img}
+                        alt=""
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    </figure>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

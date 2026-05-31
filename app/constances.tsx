@@ -149,6 +149,7 @@ export const photoImages: ImageData[] = [
   "79320001.JPG",
   "79360020.JPG",
   "68200014.JPG",
+  "79320014.JPG",
   "98300026.JPG",
 ];
 
