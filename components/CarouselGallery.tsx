@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useId } from "react";
 import { type ImageData } from "../app/constances";
 
 function Img({ src, alt }: { src: string; alt: string }) {
@@ -12,7 +12,6 @@ function Img({ src, alt }: { src: string; alt: string }) {
       alt={alt}
       onLoad={(e) => {
         const img = e.currentTarget;
-        console.log(img);
         setIsPortrait(img.naturalHeight > img.naturalWidth);
       }}
       className={
@@ -25,12 +24,13 @@ function Img({ src, alt }: { src: string; alt: string }) {
 }
 
 export default function CarouselGallery({ images, layouts }) {
+  const randomStringId: string = useId();
+
   let imageIndex = 0;
   let count = 0;
   const modalRef = useRef<HTMLDialogElement>(null);
 
   const openModal = (imgId: string) => {
-    console.log(imgId);
     modalRef.current?.showModal();
     // Use the native scrollIntoView to jump to the clicked image in the carousel
     document
@@ -63,7 +63,9 @@ export default function CarouselGallery({ images, layouts }) {
                 let currentIndex = index + imageIndex;
                 return (
                   <div
-                    onClick={() => openModal(`${currentIndex}`)}
+                    onClick={() =>
+                      openModal(`${randomStringId}-${currentIndex}`)
+                    }
                     key={currentIndex}
                     className=" w-auto flex items-center justify-center overflow-hidden"
                   >
@@ -91,25 +93,27 @@ export default function CarouselGallery({ images, layouts }) {
           </p>
 
           <div className="carousel w-full absolute top-0 left-0">
-            {images.map((img, id) => (
-              <div
-                key={id}
-                id={`slide-${id}`}
-                className="carousel-item relative w-full"
-              >
-                <div className="bg-base-content w-screen h-screen flex items-center justify-center">
-                  <div className="card bg-base-content shadow-2xl w-full h-full max-w-4xl max-h-[85vh] flex flex-col justify-center items-center p-4">
-                    <figure className="w-full h-full flex justify-center items-center overflow-hidden">
-                      <img
-                        src={img}
-                        alt=""
-                        className="max-w-full max-h-full object-contain"
-                      />
-                    </figure>
+            {images.map((img, id) => {
+              return (
+                <div
+                  key={id}
+                  id={`slide-${randomStringId}-${id}`}
+                  className="carousel-item relative w-full"
+                >
+                  <div className="bg-base-content w-screen h-screen flex items-center justify-center">
+                    <div className="card bg-base-content shadow-2xl w-full h-full max-w-4xl max-h-[85vh] flex flex-col justify-center items-center p-4">
+                      <figure className="w-full h-full flex justify-center items-center overflow-hidden">
+                        <img
+                          src={img}
+                          alt=""
+                          className="max-w-full max-h-full object-contain"
+                        />
+                      </figure>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
