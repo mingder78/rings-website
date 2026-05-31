@@ -4,21 +4,14 @@ import { useState, useRef, useId } from "react";
 import { type ImageData } from "../app/constances";
 
 function Img({ src, alt }: { src: string; alt: string }) {
-  const [isPortrait, setIsPortrait] = useState(false);
-
   return (
     <img
       src={src}
       alt={alt}
       onLoad={(e) => {
         const img = e.currentTarget;
-        setIsPortrait(img.naturalHeight > img.naturalWidth);
       }}
-      className={
-        isPortrait
-          ? "sm:max-h-[50vh] w-auto object-contain"
-          : "sm:max-w-[50vw] h-auto object-contain"
-      }
+      className="max-w-full max-h-full object-contain"
     />
   );
 }
