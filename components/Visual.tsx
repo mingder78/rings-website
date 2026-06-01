@@ -8,7 +8,7 @@ const imagesInLoop = [
   "musicscape-71.png",
   "musicscape-79.png",
 ];
-const others = ["musicscape-70.png", "musicscape-30s.png", "musicscape-82.png"];
+const others = ["IMG_6199-copya.jpg", "IMG_6206-copy.jpg", "IMG_6193-copy.jpg"];
 
 export default function Visual({
   title,

@@ -89,25 +89,44 @@ export default function RingsPage() {
           <p className="text-xs text-muted-foreground pt-12 border-t border-border"></p>
 
           <Visual
-            title="In Between The Whispers, musicscapes - S’yo Fang"
+            title="Life Is Elsewhere - InTrio"
             infos={[
-              "A dreamy drawing series for S’yo’s exhibition for 2022 SONIC Award, at International Society of Jazz Composers and Arrangers.",
-              "Colours were added to elaborate S’yo’s abundant imagination in the layers of his compositions while emphasizing the tensions and flow derived from the dialogues between music & poetry.",
-              "The visuals are based on my artwork for the poetry collection «In between the Whispers», which will be released in late 2022.",
+              "Her textless lines themselves are already the journey to elsewhere, which never ends...",
+              "The sliver moon changes in its 28-day phases; dandelion seeds float out from their mother. They depart yet do not depart; they loop in the cycle of the universe and the cycle of life. The subtle design, including the curved cut, aims to communicate the timeless yet continuous journey and the clean, airy narrative in her voice and melody.",
+              `“Platonic jazz, where you forget time and transcend space, where you make unquestioning friendship with the rest of the world...`,
+              `It is this alleged weed that symbolizes growth and increasing clairvoyance, as does the 28-day lunar cycle that adorns the inside of the cover, for the washing and waning of human consciousness, actually of the soul life. But staring at the picture we realize that nothing is unfolding, that the crop does not float, and that the moon phases are two-dimensional and do not grow or shrink. It is his hushed snapshots...” (translated from Dutch)`,
+              "—Storm Bakker, review at Progjazz",
             ]}
             types={[
-              "Artist | S’yo Fang",
-              "Project title | «In Between The Whispers» musicscape (part of the poetry collection for the album «I Prefer»)",
-              "Design | illustration, visual design by Szu-Yi Wang",
-              "Year | 2022",
+              `Artist | InTrio, YingYing Su`,
+              `Album title | «Life Is Elsewhere»`,
+              `Label | SONNA Records`,
+              `Illustration | Hossam Abu Hashish`,
+              `Design | album design, printing, EP images, group photography by Szu-Yi Wang`,
+              `Year | 2021`,
             ]}
-            more="More information will be updated soon"
-            link=""
-            url=""
-            image1="musicscape-55a.png"
-            imagesLoop={["musicscape-26.png", "musicscape-85.png"]}
-            images2={["musicscape-26.png", "musicscape-85.png"]}
-            imagesLoop2={["musicscape-26.png", "musicscape-85.png"]}
+            more="Find more information of the release "
+            link="here"
+            url="https://linktr.ee/InTrio"
+            image1="InTrio_cover-with-sonna-02.jpg"
+            imagesLoop={[
+              "IMG_6180aa.jpg",
+              "IMG_6181aaa.jpg",
+              "IMG_6207-copy.jpg",
+              "IMG_6208-copy.jpg",
+            ]}
+            imagesLoop2={[
+              "IMG_6199-copya.jpg",
+              "IMG_6206-copy.jpg",
+              "IMG_6193-copy.jpg",
+            ]}
+            images2={[
+              "IMG_6201-copy.jpg",
+              "IMG_6196-copy.jpg",
+              "IMG_6184-copy.jpg",
+              "IMG_5666a.jpg",
+              "IMG_6190-copy.jpg",
+            ]}
           />
           {/* Title Section */}
           <p className="text-xs text-muted-foreground pt-12 border-t border-border"></p>
