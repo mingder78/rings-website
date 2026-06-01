@@ -18,7 +18,7 @@ export default function AutoCarousel({ images }: ImagesProps) {
   }, []);
 
   return (
-    <div className="relative overflow-hidden rounded-box">
+    <div className="relative overflow-hidden">
       <div
         className="flex transition-transform duration-700 ease-in-out"
         style={{
@@ -26,13 +26,13 @@ export default function AutoCarousel({ images }: ImagesProps) {
         }}
       >
         {images.map((src, index) => (
-          <div key={index} className="w-full shrink-0 p-4">
-            <div className="card bg-base-100 shadow-xl">
+          <div key={index} className="w-full shrink-0">
+            <div className="bg-base-100 shadow-xl">
               <figure>
                 <img
                   src={src}
                   alt={`slide-${index}`}
-                  className="w-full h-64 object-contain"
+                  className="w-full h-audo object-contain"
                 />
               </figure>
             </div>
