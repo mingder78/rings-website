@@ -39,9 +39,12 @@ const TextTitle = ({ title, infos, types, more, link, url }: TextProps) => {
         </div>
       </section>
       {/* Exhibition Info */}
-      <p className="text-muted-foreground italic">{more}</p>
-
-      <a>{link}</a>
+      <p className="text-muted-foreground italic">
+        {more}
+        <a className="underline" href={url}>
+          {link}
+        </a>
+      </p>
       <style>
         {`
     .wrapper {

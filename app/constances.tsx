@@ -89,7 +89,7 @@ export const imagesLinks = [
   ["The Shining Matter", "/The-Shining-Matter", "IMG_6054aa.jpg"],
   ["Meet the Mountains", "/Meet-the-Mountains", "_MG_7730blue_s.jpg"],
   ["(un)Folded Clusters", "/un-Folded-Clusters", "DSC07413.JPG"],
-  ["Visual music", "/", "musicscape-81.png"],
+  ["Visual music", "/Visual-music", "musicscape-81.png"],
 ];
 
 export const works = [
@@ -155,8 +155,8 @@ export const photoImages: ImageData[] = [
 
 export const otherSections = [
   ["Film", "/Film"],
-  ["Photo galleries", "/Photo-gallerie"],
-  ["Visual music", "/"],
+  ["Photo galleries .:.", "/Photo-gallerie"],
+  ["Visual music", "/Visual-music"],
   ["Information", "/Information"],
   ["cv", "/cv"],
 ];

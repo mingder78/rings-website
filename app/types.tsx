@@ -7,9 +7,8 @@ export type ImagesProps = {
 };
 
 export type Images2Props = {
-  images: string[];
-  image1: string;
-  imagesLoop: string[];
+  images2: string[];
+  imagesLoop2: string[];
 };
 
 export type Text1Props = {
@@ -35,4 +34,17 @@ export type Type1Props = {
   url: string;
   image1: string;
   imagesLoop: string[];
+};
+
+export type Type2Props = {
+  title: string;
+  infos: string[];
+  types: string[];
+  more: string;
+  link: string;
+  url: string;
+  image1: string;
+  imagesLoop: string[];
+  images2: string[];
+  imagesLoop2: string[];
 };

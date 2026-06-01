@@ -7,8 +7,16 @@ import TextTitle1 from "@/components/TextTitle1";
 import Note from "@/components/Note";
 import React, { useState } from "react";
 
-const images = ["musicscape-81.png", "musicscape-71.png", "musicscape-79.png"];
-
+const imagesInLoop = [
+  "musicscape-81.png",
+  "musicscape-71.png",
+  "musicscape-79.png",
+];
+const othersImages = [
+  "musicscape-70.png",
+  "musicscape-30s.png",
+  "musicscape-82.png",
+];
 export default function RingsPage() {
   return (
     <div className="font-ebgaramond min-h-screen bg-background text-foreground md:pl-60">
@@ -43,13 +51,9 @@ export default function RingsPage() {
               imagesLoop={["musicscape-26.png", "musicscape-85.png"]}
             />
             <ImagesCol
-              images={[
-                "musicscape-70.png",
-                "musicscape-30s.png",
-                "musicscape-82.png",
-              ]}
+              imagesLoop={imagesInLoop}
               image1=""
-              imagesLoop={images}
+              images={othersImages}
             />
           </div>{" "}
           <p className="text-xs text-muted-foreground pt-12 border-t border-border"></p>
