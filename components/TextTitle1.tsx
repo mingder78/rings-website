@@ -12,11 +12,11 @@ const TextTitle1 = ({ title, infos }: Text1Props) => {
       <br />
 
       {infos.map((info, index) => (
-        <>
+        <div>
           <small className="text-muted-foreground italic">{info}</small>
           <br />
           <br />
-        </>
+        </div>
       ))}
     </div>
   );
