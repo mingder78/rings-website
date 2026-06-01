@@ -2,13 +2,11 @@
 
 import { useEffect, useState } from "react";
 
-const images = [
-  "https://picsum.photos/400/200",
-  "https://picsum.photos/200/201",
-  "https://picsum.photos/400/802",
-];
+type ImagesProps = {
+  images: string[];
+};
 
-export default function AutoCarousel() {
+export default function AutoCarousel({ images }: ImagesProps) {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {

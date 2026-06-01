@@ -1,17 +1,17 @@
 "use client";
 
 import ImageLinksComponent from "@/components/ImageLinks";
-import AutoCarousel from "@/components/AutoCarousel";
-
+import Helloworld from "@/components/Helloworld";
 import Note from "@/components/Note";
 import React, { useState } from "react";
 
 export default function RingsPage() {
   return (
     <div className="font-ebgaramond min-h-screen bg-background text-foreground md:pl-60">
+      <div className="flex flex-wrap flex-col md:flex-row p-10 gap-10">
+        <Helloworld name="ming" />
+      </div>
       {/* Main Content */}
-
-      <AutoCarousel />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
         <div className="card bg-base-100 shadow-xl">
