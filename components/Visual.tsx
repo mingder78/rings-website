@@ -34,7 +34,7 @@ export default function Visual({
         image1={image1}
         imagesLoop={imagesLoop}
       />
-      <ImagesCol imagesLoop2={imagesInLoop} images2={others} />
+      <ImagesCol imagesLoop2={imagesLoop2} images2={images2} />
     </div>
   );
 }

@@ -40,8 +40,16 @@ export default function RingsPage() {
             url=""
             image1="musicscape-55a.png"
             imagesLoop={["musicscape-26.png", "musicscape-85.png"]}
-            images2={["musicscape-26.png", "musicscape-85.png"]}
-            imagesLoop2={["musicscape-26.png", "musicscape-85.png"]}
+            images2={[
+              "musicscape-70.png",
+              "musicscape-30s.png",
+              "musicscape-82.png",
+            ]}
+            imagesLoop2={[
+              "musicscape-81.png",
+              "musicscape-71.png",
+              "musicscape-79.png",
+            ]}
           />
           {/* Title Section */}
           <p className="text-xs text-muted-foreground pt-12 border-t border-border"></p>
@@ -63,10 +71,19 @@ export default function RingsPage() {
             more="Find more information of the release "
             link="here"
             url="https://linktr.ee/sannerambags"
-            image1="musicscape-55a.png"
-            imagesLoop={["musicscape-26.png", "musicscape-85.png"]}
-            images2={["musicscape-26.png", "musicscape-85.png"]}
-            imagesLoop2={["musicscape-26.png", "musicscape-85.png"]}
+            image1="Sister_cover.png"
+            imagesLoop={["Screenshot-2022-11-06-at-20.09.00.png"]}
+            images2={[
+              "Screenshot-2022-11-06-at-20.09.14.png",
+              "EPs-06.jpg",
+              "EPs-01.jpg",
+              "LP_12Inch-labelAB-03.jpg",
+              "aaSister_LP_12Inch-Gatefold_4mm-spine_GD30OB2-N_insideaaaa.jpg",
+            ]}
+            imagesLoop2={[
+              "Screenshot-2022-11-06-at-20.08.37.png",
+              "Screenshot-2022-11-06-at-20.08.49.png",
+            ]}
           />
           {/* Title Section */}
           <p className="text-xs text-muted-foreground pt-12 border-t border-border"></p>
