@@ -24,7 +24,7 @@ export default function RingsPage() {
             <div className="bg-red-0 col-span-1 row-span-1">
               {/* Item 1 */}
               <div>
-                <p className="text-sm leading-relaxed space-y-2 text-[#244d75] >
+                <p className="text-sm leading-relaxed space-y-2 text-[#244d75]">
                   <br />
                   <br />
                   a klaproos; a yellow stone / above the water; into the dunes

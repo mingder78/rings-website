@@ -23,7 +23,7 @@ export default function Visual({
   imagesLoop2,
 }: Type2Props) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 p-4">
+    <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 sm:p-4">
       <InfoType1
         title={title}
         infos={infos}

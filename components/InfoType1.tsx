@@ -29,6 +29,8 @@ export default function InfoType1({
       <div className="bg-blue-0 flex justify-center  items-center">
         <MyComponent image={image1} />
       </div>
+      <br></br>
+      <br></br>
       <div className="bg-red-0 flex justify-center items-center">
         <AutoCarousel images={imagesLoop} />
       </div>

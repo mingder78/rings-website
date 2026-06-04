@@ -15,7 +15,7 @@ const MyCarousel = () => {
 
 const TextTitle = ({ title, infos, types, more, link, url }: TextProps) => {
   return (
-    <div className="p-2">
+    <div className="sm:p-2">
       <p className="text-lg leading-relaxed space-y-2">{title}</p>
       <br />
 

@@ -1,5 +1,5 @@
 "use client";
-
+import AnimImage from "@/components/AnimImage";
 import ImageLinksComponent from "@/components/ImageLinks";
 import Note from "@/components/Note";
 import React, { useState } from "react";
@@ -41,7 +41,7 @@ export default function RingsPage() {
     <div className="font-ebgaramond min-h-screen bg-background text-foreground md:pl-60">
       {/* Main Content */}
       <h1>Notes</h1>
-
+      <AnimImage name="" />
       {/* Form */}
       <form onSubmit={addNote} style={{ marginBottom: 20 }}>
         <input

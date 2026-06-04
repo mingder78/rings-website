@@ -60,7 +60,7 @@ export default function CarouselGallery({ images, layouts }) {
                       openModal(`${randomStringId}-${currentIndex}`)
                     }
                     key={currentIndex}
-                    className=" w-auto flex items-center justify-center overflow-hidden"
+                    className="reveal w-auto flex items-center justify-center overflow-hidden"
                   >
                     <Img src={img} alt="" />
                   </div>
@@ -95,7 +95,7 @@ export default function CarouselGallery({ images, layouts }) {
                 >
                   <div className="bg-base-content w-screen h-screen flex items-center justify-center">
                     <div className="card bg-base-content shadow-2xl w-full h-full max-w-4xl max-h-[85vh] flex flex-col justify-center items-center p-4">
-                      <figure className="w-full h-full flex justify-center items-center overflow-hidden">
+                      <figure className="reveal w-full h-full flex justify-center items-center overflow-hidden">
                         <img
                           src={img}
                           alt=""

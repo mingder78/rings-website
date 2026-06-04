@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import SidebarLayout from "@/components/SidebarLayout";
+import ImageObserver from "@/components/ImageObserver";
 import { Playfair_Display } from "next/font/google";
 import localFont from "next/font/local";
 import { Baskervville } from "next/font/google";
@@ -71,6 +72,7 @@ export default function RootLayout({
       <body
         className={`${cactus.variable} ${ebGaramond.variable} ${notoSansTC.variable}`}
       >
+        <ImageObserver />
         <SidebarLayout />
         <main className="h-full overflow-y-auto z-0">{children}</main>
       </body>
